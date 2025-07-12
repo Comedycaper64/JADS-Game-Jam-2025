@@ -10,7 +10,8 @@ public class InputManager : MonoBehaviour, Controls.IPlayerActions
     private Controls controls;
 
     public event Action OnAdvanceAction;
-    public static event Action OnMenuAction;
+    public event Action OnInventoryAction;
+    public event Action OnMenuAction;
 
     private void Awake()
     {
@@ -51,6 +52,19 @@ public class InputManager : MonoBehaviour, Controls.IPlayerActions
         if (context.performed)
         {
             OnAdvanceAction?.Invoke();
+        }
+    }
+
+    public void OnInventory(InputAction.CallbackContext context)
+    {
+        if (disableInputs)
+        {
+            return;
+        }
+
+        if (context.performed)
+        {
+            OnInventoryAction?.Invoke();
         }
     }
 

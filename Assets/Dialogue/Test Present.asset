@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d3a7e0832a0024688f00cb8046090a, type: 3}
+  m_Name: Test Present
+  m_EditorClassIdentifier: 
+  clueQuestionText: Which one is my badge?
+  requiredClueKey: BADGE
+  wrongClueConversation: {fileID: 11400000, guid: ba866c2bcc083ca42b666e0a47f5ae27, type: 2}
+  correctClueConversation: {fileID: 11400000, guid: 618ced2e80efdc54abaa20dcf68e03df, type: 2}

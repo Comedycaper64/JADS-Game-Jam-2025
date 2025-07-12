@@ -12,6 +12,9 @@ public class CinematicManager : MonoBehaviour
     private DialogueManager dialogueManager;
 
     [SerializeField]
+    private ScreenEffectManager screenEffectManager;
+
+    [SerializeField]
     private ConversationSO testConversation;
 
     public static CinematicManager Instance { get; private set; }
@@ -32,7 +35,7 @@ public class CinematicManager : MonoBehaviour
     private void Start()
     {
         //TESTING
-        PlayCinematic(testConversation, null);
+        //PlayCinematic(testConversation, null);
     }
 
     public void PlayCinematic(ConversationSO conversationSO, Action OnCinematicFinished)
@@ -77,12 +80,19 @@ public class CinematicManager : MonoBehaviour
             screenEffect.onEffectComplete = TryPlayNextNode;
 
             //ScreenEffectManager.PlayEffect
+            screenEffectManager.PlayEffect(screenEffect);
         }
         else if (nodeType == typeof(ClueSO))
         {
             ClueSO clue = currentCinematicNode as ClueSO;
 
-            //Add Clue to clue manager
+            ClueManager.Instance.AddClue(clue, TryPlayNextNode);
+        }
+        else if (nodeType == typeof(CluePresentSO))
+        {
+            CluePresentSO cluePresent = currentCinematicNode as CluePresentSO;
+
+            ClueManager.Instance.StartCluePresent(cluePresent, OnCinematicFinished);
         }
         else
         {

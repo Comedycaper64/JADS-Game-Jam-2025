@@ -241,6 +241,11 @@ public class DialogueManager : MonoBehaviour
         //     return;
         // }
 
+        if (ClueManagerUI.inventoryOpen)
+        {
+            return;
+        }
+
         DisplayNextSentence();
     }
 }

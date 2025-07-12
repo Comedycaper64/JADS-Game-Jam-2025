@@ -10,10 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e128a1de23a7bb4eb353e8bc0cbaa7c, type: 3}
-  m_Name: Test Convo
+  m_Name: Test Correct
   m_EditorClassIdentifier: 
   conversationNodes:
-  - {fileID: 11400000, guid: 440c5035e8a95594db58f0e866a5790c, type: 2}
-  - {fileID: 11400000, guid: 3dac6987ec565dc429b6024f658e7422, type: 2}
-  - {fileID: 11400000, guid: 440c5035e8a95594db58f0e866a5790c, type: 2}
-  - {fileID: 11400000, guid: 1a8405b45a405d145b30e73e91cf8109, type: 2}
+  - {fileID: 11400000, guid: 04dbd80051bfc24468be377ff2f5080e, type: 2}

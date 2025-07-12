@@ -36,14 +36,14 @@ public class PauseManager : MonoBehaviour
         voiceSlider.value = PlayerOptions.GetVoiceVolume();
     }
 
-    private void OnEnable()
+    private void Start()
     {
-        InputManager.OnMenuAction += TogglePause;
+        InputManager.Instance.OnMenuAction += TogglePause;
     }
 
     private void OnDisable()
     {
-        InputManager.OnMenuAction -= TogglePause;
+        InputManager.Instance.OnMenuAction -= TogglePause;
     }
 
     public void SetMusicVolume(float newVolume)
