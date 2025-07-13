@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e128a1de23a7bb4eb353e8bc0cbaa7c, type: 3}
+  m_Name: Test Convo
+  m_EditorClassIdentifier: 
+  conversationNodes:
+  - {fileID: 11400000, guid: 440c5035e8a95594db58f0e866a5790c, type: 2}
+  - {fileID: 11400000, guid: 3dac6987ec565dc429b6024f658e7422, type: 2}
+  - {fileID: 11400000, guid: c6bd225ce35d3a34cbe49b64938d5cf2, type: 2}
+  - {fileID: 11400000, guid: 440c5035e8a95594db58f0e866a5790c, type: 2}
+  - {fileID: 11400000, guid: 1a8405b45a405d145b30e73e91cf8109, type: 2}

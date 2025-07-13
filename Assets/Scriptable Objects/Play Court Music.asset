@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e128a1de23a7bb4eb353e8bc0cbaa7c, type: 3}
-  m_Name: Test Correct
+  m_Script: {fileID: 11500000, guid: e81c5cd62589bed4abe66f4c058a60b9, type: 3}
+  m_Name: Play Court Music
   m_EditorClassIdentifier: 
-  conversationNodes:
-  - {fileID: 11400000, guid: 04dbd80051bfc24468be377ff2f5080e, type: 2}
+  newMusicTrack: {fileID: 0}

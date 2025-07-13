@@ -26,15 +26,11 @@ public struct DialogueUIEventArgs
 
 public class DialogueManager : MonoBehaviour
 {
-    //private bool bLogActive = false;
+    private bool bLogActive = false;
     private bool bIsSentenceTyping;
-    private bool bLoopToChoice;
-
-    //private Coroutine autoPlayCoroutine;
-
+    private bool bIsSkipping = false;
+    private float skipTimeBetweenAdvance = 0.1f;
     private ActorSO currentActor;
-
-    //private DialogueChoiceSO currentChoice;
     private string currentSentence;
     private int currentSpriteIndex;
     private Queue<string> currentDialogue;
@@ -44,25 +40,19 @@ public class DialogueManager : MonoBehaviour
     public static event Action OnFinishTypingDialogue;
     public static event EventHandler<bool> OnToggleDialogueUI;
 
-    //public static event EventHandler<DialogueChoiceUIEventArgs> OnDisplayChoices;
-
-    //public static event EventHandler<Sprite[]> OnChangeSprite;
     public static event EventHandler<DialogueUIEventArgs> OnDialogue;
 
     private void Awake()
     {
-        // DialogueAutoPlayUI.OnAutoPlayToggle += ToggleAutoPlay;
-        // DialogueLogUI.OnLogToggle += OnLogToggle;
+        DialogueLogUI.OnLogToggle += OnLogToggle;
     }
 
     private void OnDisable()
     {
         InputManager.Instance.OnAdvanceAction -= InputManager_OnAdvance;
-
-        // if (autoPlayCoroutine != null)
-        // {
-        //     StopCoroutine(autoPlayCoroutine);
-        // }
+        InputManager.Instance.OnSkipStartAction -= InputManager_OnSkipStart;
+        InputManager.Instance.OnSkipEndAction -= InputManager_OnSkipEndStart;
+        DialogueLogUI.OnLogToggle -= OnLogToggle;
     }
 
     public void PlayDialogue(DialogueSO dialogueSO, Action onDialogueComplete)
@@ -70,37 +60,12 @@ public class DialogueManager : MonoBehaviour
         this.onDialogueComplete = onDialogueComplete;
         dialogues = new Queue<Dialogue>(dialogueSO.GetDialogues());
         InputManager.Instance.OnAdvanceAction += InputManager_OnAdvance;
+        InputManager.Instance.OnSkipStartAction += InputManager_OnSkipStart;
+        InputManager.Instance.OnSkipEndAction += InputManager_OnSkipEndStart;
 
         ToggleDialogueUI(true);
         TryPlayNextDialogue();
     }
-
-    // public void DisplayChoices(DialogueChoiceSO dialogueChoiceSO, Action onDialogueComplete)
-    // {
-    //     this.onDialogueComplete = onDialogueComplete;
-    //     currentChoice = dialogueChoiceSO;
-    //     ToggleDialogueUI(true);
-    //     DialogueChoiceUIEventArgs choiceUIEventArgs = new DialogueChoiceUIEventArgs(
-    //         dialogueChoiceSO,
-    //         PlayChoiceDialogue
-    //     );
-    //     OnDisplayChoices?.Invoke(this, choiceUIEventArgs);
-    // }
-
-    // private void PlayChoiceDialogue(object sender, DialogueChoice dialogueChoice)
-    // {
-    //     if (dialogueChoice.loopBackToChoice)
-    //     {
-    //         bLoopToChoice = true;
-    //     }
-
-    //     dialogues = new Queue<Dialogue>(
-    //         currentChoice.GetDialogueAnswers()[dialogueChoice.correspondingDialogue].dialogueAnswers
-    //     );
-    //     InputManager.Instance.OnShootAction += InputManager_OnShootAction;
-
-    //     TryPlayNextDialogue();
-    // }
 
     private void TryPlayNextDialogue()
     {
@@ -120,22 +85,11 @@ public class DialogueManager : MonoBehaviour
 
     private void DisplayNextSentence()
     {
-        //Debug.Log("Go, go go!");
-
         if (bIsSentenceTyping)
         {
-            //Debug.Log("We're typin here!");
             OnFinishTypingDialogue?.Invoke();
             return;
         }
-
-        //Debug.Log("Next sentence");
-
-        // if (autoPlayCoroutine != null)
-        // {
-        //     StopCoroutine(autoPlayCoroutine);
-        // }
-
 
         if (!currentDialogue.TryDequeue(out currentSentence))
         {
@@ -155,23 +109,12 @@ public class DialogueManager : MonoBehaviour
         if (currentSentence == "")
         {
             ToggleDialogueUI(false);
-
-            // if (animationTimer == 0f)
-            // {
-            //     animationCoroutine = StartCoroutine(AnimationPause(animationTimer));
-            // }
         }
         else
         {
             ToggleDialogueUI(true);
             StartTypingSentence();
         }
-    }
-
-    private IEnumerator DialogueAutoPlayTimer(float dialogueTime)
-    {
-        yield return new WaitForSeconds(dialogueTime);
-        DisplayNextSentence();
     }
 
     private void StartTypingSentence()
@@ -199,47 +142,44 @@ public class DialogueManager : MonoBehaviour
         OnToggleDialogueUI?.Invoke(this, toggle);
     }
 
-    private void ResetChoices()
+    private IEnumerator SkipDialogue()
     {
-        // DialogueChoiceUIEventArgs blankChoiceUIEventArgs = new DialogueChoiceUIEventArgs(
-        //     null,
-        //     null
-        // );
-        // OnDisplayChoices?.Invoke(this, blankChoiceUIEventArgs);
+        if (bIsSkipping)
+        {
+            InputManager_OnAdvance();
+
+            yield return new WaitForSeconds(skipTimeBetweenAdvance);
+
+            StartCoroutine(SkipDialogue());
+        }
     }
 
     private void EndDialogue(bool skipping = false)
     {
         InputManager.Instance.OnAdvanceAction -= InputManager_OnAdvance;
+        InputManager.Instance.OnSkipStartAction -= InputManager_OnSkipStart;
+        InputManager.Instance.OnSkipEndAction -= InputManager_OnSkipEndStart;
+
+        bIsSkipping = false;
 
         ToggleDialogueUI(false);
 
-        if (bLoopToChoice)
+        if (!skipping)
         {
-            // bLoopToChoice = false;
-            // DisplayChoices(currentChoice, onDialogueComplete);
+            onDialogueComplete();
         }
         else
         {
-            ResetChoices();
-
-            if (!skipping)
-            {
-                onDialogueComplete();
-            }
-            else
-            {
-                onDialogueComplete = null;
-            }
+            onDialogueComplete = null;
         }
     }
 
     private void InputManager_OnAdvance()
     {
-        // if (bLogActive)
-        // {
-        //     return;
-        // }
+        if (bLogActive)
+        {
+            return;
+        }
 
         if (ClueManagerUI.inventoryOpen)
         {
@@ -247,5 +187,21 @@ public class DialogueManager : MonoBehaviour
         }
 
         DisplayNextSentence();
+    }
+
+    private void InputManager_OnSkipEndStart()
+    {
+        bIsSkipping = false;
+    }
+
+    private void InputManager_OnSkipStart()
+    {
+        bIsSkipping = true;
+        StartCoroutine(SkipDialogue());
+    }
+
+    private void OnLogToggle(object sender, bool toggle)
+    {
+        bLogActive = toggle;
     }
 }

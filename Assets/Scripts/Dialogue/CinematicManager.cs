@@ -9,13 +9,13 @@ public class CinematicManager : MonoBehaviour
     private Action OnCinematicFinished;
 
     [SerializeField]
+    private AudioManager audioManager;
+
+    [SerializeField]
     private DialogueManager dialogueManager;
 
     [SerializeField]
     private ScreenEffectManager screenEffectManager;
-
-    [SerializeField]
-    private ConversationSO testConversation;
 
     public static CinematicManager Instance { get; private set; }
 
@@ -30,12 +30,6 @@ public class CinematicManager : MonoBehaviour
             return;
         }
         Instance = this;
-    }
-
-    private void Start()
-    {
-        //TESTING
-        //PlayCinematic(testConversation, null);
     }
 
     public void PlayCinematic(ConversationSO conversationSO, Action OnCinematicFinished)
@@ -93,6 +87,21 @@ public class CinematicManager : MonoBehaviour
             CluePresentSO cluePresent = currentCinematicNode as CluePresentSO;
 
             ClueManager.Instance.StartCluePresent(cluePresent, OnCinematicFinished);
+        }
+        else if (nodeType == typeof(ChangeMusicSO))
+        {
+            ChangeMusicSO musicChange = currentCinematicNode as ChangeMusicSO;
+
+            if (musicChange.newMusicTrack)
+            {
+                audioManager.ChangeMusicTrack(musicChange.newMusicTrack);
+            }
+            else
+            {
+                audioManager.StopMusic();
+            }
+
+            TryPlayNextNode();
         }
         else
         {

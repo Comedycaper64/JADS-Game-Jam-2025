@@ -11,7 +11,10 @@ public class InputManager : MonoBehaviour, Controls.IPlayerActions
 
     public event Action OnAdvanceAction;
     public event Action OnInventoryAction;
+    public event Action OnLogAction;
     public event Action OnMenuAction;
+    public event Action OnSkipStartAction;
+    public event Action OnSkipEndAction;
 
     private void Awake()
     {
@@ -68,11 +71,41 @@ public class InputManager : MonoBehaviour, Controls.IPlayerActions
         }
     }
 
+    public void OnLog(InputAction.CallbackContext context)
+    {
+        if (disableInputs)
+        {
+            return;
+        }
+
+        if (context.performed)
+        {
+            OnLogAction?.Invoke();
+        }
+    }
+
     public void OnMenu(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             OnMenuAction?.Invoke();
+        }
+    }
+
+    public void OnSkip(InputAction.CallbackContext context)
+    {
+        if (disableInputs)
+        {
+            return;
+        }
+
+        if (context.performed)
+        {
+            OnSkipStartAction?.Invoke();
+        }
+        else if (context.canceled)
+        {
+            OnSkipEndAction?.Invoke();
         }
     }
 

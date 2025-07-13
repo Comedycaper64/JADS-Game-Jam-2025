@@ -1,16 +1,20 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class EnvironmentManager : MonoBehaviour
 {
     private int necessaryInteractCounter = 0;
-    private bool isBusy = false;
+    private float sensationDialogueCooldown = 5f;
+    private bool isBusy = true;
+    private bool sensationCooldown = false;
 
     [SerializeField]
     private EnvironmentInteractable[] necessaryInteractables;
 
-    [SerializeField]
-    private ConversationSO endOfInvestigationConvo;
+    public Action OnInvestigationFinished;
+
+    public static Action OnSensationDialogue;
 
     private void Start()
     {
@@ -18,12 +22,52 @@ public class EnvironmentManager : MonoBehaviour
         {
             interactable.SetManager(this);
         }
+
+        isBusy = true;
+    }
+
+    private void Update()
+    {
+        if (isBusy)
+        {
+            return;
+        }
+
+        if (Input.GetMouseButtonDown(0) && !sensationCooldown)
+        {
+            StartCoroutine(DelayedClickTest());
+        }
     }
 
     private IEnumerator DelayedUnbusy()
     {
         yield return new WaitForSeconds(1f);
         SetIsBusy(false);
+    }
+
+    private IEnumerator DelayedClickTest()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        if (!isBusy)
+        {
+            OnSensationDialogue?.Invoke();
+
+            StartCoroutine(SensationCD());
+        }
+    }
+
+    private IEnumerator SensationCD()
+    {
+        sensationCooldown = true;
+        yield return new WaitForSeconds(sensationDialogueCooldown);
+
+        sensationCooldown = false;
+    }
+
+    public void BeginInvestigation()
+    {
+        isBusy = false;
     }
 
     public void NecessaryInteractionAdvance()
@@ -39,7 +83,7 @@ public class EnvironmentManager : MonoBehaviour
         }
         else
         {
-            CinematicManager.Instance.PlayCinematic(endOfInvestigationConvo, null);
+            OnInvestigationFinished?.Invoke();
         }
     }
 

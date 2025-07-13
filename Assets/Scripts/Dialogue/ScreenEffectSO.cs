@@ -7,6 +7,8 @@ public enum ScreenEffect
     whiteFlash,
     fadeToBlack,
     fadeFromBlack,
+    enableCourt,
+    disableCourt,
     cluePresent
 }
 

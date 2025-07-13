@@ -16,11 +16,6 @@ public class DialogueUI : MonoBehaviour
     private int charsBetweenDialogueNoises = 3;
     private float timeBetweenLetterTyping = 0.025f;
 
-    // private float spriteChangeTimer = 0f;
-
-    // [SerializeField]
-    // private float spriteChangeTime = 0.5f;
-
     private const float LOW_PITCH_RANGE = 0.75f;
     private const float HIGH_PITCH_RANGE = 1.25f;
 
@@ -36,9 +31,6 @@ public class DialogueUI : MonoBehaviour
 
     [SerializeField]
     private Animator actorSpriteAnimator;
-
-    // private DialogueChoice[] dialogueChoices;
-    // private EventHandler<DialogueChoice> onDialogueChosen;
 
     [SerializeField]
     private Image dialogueFaceSprite;
@@ -60,18 +52,13 @@ public class DialogueUI : MonoBehaviour
     [SerializeField]
     private Image dialogueTextbox;
 
-    // [SerializeField]
-    // private DialogueChoiceUI[] dialogueChoiceUI;
-
-    // public EventHandler<DialogueLog> OnNewDialogue;
+    public EventHandler<DialogueLog> OnNewDialogue;
 
     private void Awake()
     {
         DialogueManager.OnToggleDialogueUI += DialogueManager_OnToggleDialogueUI;
         DialogueManager.OnDialogue += DialogueManager_OnDialogue;
         DialogueManager.OnFinishTypingDialogue += DialogueManager_OnFinishTypingDialogue;
-        // DialogueManager.OnDisplayChoices += DialogueManager_OnDisplayChoices;
-        // DialogueChoiceUI.OnChoose += DialogueChoiceUI_OnChoose;
 
         ClearDialogueText();
         actorFontMaterialInstance = actorNameText.fontMaterial;
@@ -88,10 +75,6 @@ public class DialogueUI : MonoBehaviour
         DialogueManager.OnToggleDialogueUI -= DialogueManager_OnToggleDialogueUI;
         DialogueManager.OnDialogue -= DialogueManager_OnDialogue;
         DialogueManager.OnFinishTypingDialogue -= DialogueManager_OnFinishTypingDialogue;
-        // DialogueManager.OnDisplayChoices -= DialogueManager_OnDisplayChoices;
-        // DialogueChoiceUI.OnChoose -= DialogueChoiceUI_OnChoose;
-
-        //InputManager.Instance.OnChooseDialogueAction -= InputManager_OnChooseDialogueAction;
 
         if (typingCoroutine != null)
         {
@@ -102,25 +85,6 @@ public class DialogueUI : MonoBehaviour
         {
             StopCoroutine(actorFadeInCoroutine);
         }
-    }
-
-    private void Update()
-    {
-        // if (currentSpriteSet.Length > 0)
-        // {
-        //     spriteChangeTimer += Time.deltaTime;
-
-        //     if (spriteChangeTimer > spriteChangeTime)
-        //     {
-        //         spriteChangeTimer = 0f;
-        //         spriteArrayIndex++;
-        //         if (spriteArrayIndex >= currentSpriteSet.Length)
-        //         {
-        //             spriteArrayIndex = 0;
-        //         }
-        //         dialogueFaceSprite.sprite = currentSpriteSet[spriteArrayIndex];
-        //     }
-        // }
     }
 
     private void SetActorName(string actorName, Color nameColour)
@@ -168,13 +132,6 @@ public class DialogueUI : MonoBehaviour
         currentDialogueNoise = actorSO.GetDialogueNoises();
     }
 
-    // private IEnumerator ActorFadeInDelay()
-    // {
-    //     yield return new WaitForSeconds(0.35f);
-    //     SetNewActorSprites();
-    // }
-
-
     private IEnumerator TypeSentence(DialogueUIEventArgs dialogueUIEventArgs)
     {
         SetNewActor(dialogueUIEventArgs.actorSO);
@@ -197,6 +154,7 @@ public class DialogueUI : MonoBehaviour
         if (currentDialogueNoise != null)
         {
             dialogueNoiseSource.clip = currentDialogueNoise;
+            dialogueNoiseSource.volume = PlayerOptions.GetVoiceVolume();
             bPlayDialogueNoises = true;
         }
         else
@@ -265,37 +223,6 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
-    // private void DisplayDialogueChoices()
-    // {
-    //     for (int i = 0; i < dialogueChoices.Length; i++)
-    //     {
-    //         dialogueChoiceUI[i].SetupDialogueChoice(dialogueChoices[i]);
-    //     }
-    // }
-
-    // private void ResetDialogueChoices()
-    // {
-    //     for (int i = 0; i < dialogueChoiceUI.Length; i++)
-    //     {
-    //         dialogueChoiceUI[i].ResetChoiceColour();
-    //         dialogueChoiceUI[i].CloseDialogueChoice();
-    //     }
-
-    //     InputManager.Instance.OnChooseDialogueAction -= InputManager_OnChooseDialogueAction;
-    // }
-
-    // public void ChooseDialogueOption(DialogueChoice choice)
-    // {
-    //     for (int i = 0; i < dialogueChoices.Length; i++)
-    //     {
-    //         dialogueChoiceUI[i].CloseDialogueChoice();
-    //     }
-
-    //     InputManager.Instance.OnChooseDialogueAction -= InputManager_OnChooseDialogueAction;
-
-    //     onDialogueChosen?.Invoke(this, choice);
-    // }
-
     private void DialogueManager_OnFinishTypingDialogue()
     {
         if (!isTyping)
@@ -317,7 +244,7 @@ public class DialogueUI : MonoBehaviour
 
         typingCoroutine = StartCoroutine(TypeSentence(dialogueArgs));
 
-        //OnNewDialogue?.Invoke(this, new DialogueLog(dialogueArgs.actorSO, dialogueArgs.sentence));
+        OnNewDialogue?.Invoke(this, new DialogueLog(dialogueArgs.actorSO, dialogueArgs.sentence));
     }
 
     private void DialogueManager_OnToggleDialogueUI(object sender, bool e)
@@ -331,40 +258,4 @@ public class DialogueUI : MonoBehaviour
         SetActorName("", Color.black);
         ToggleDialogueActive(e);
     }
-
-    // private void DialogueManager_OnDisplayChoices(
-    //     object sender,
-    //     DialogueChoiceUIEventArgs dialogueChoiceUIArgs
-    // )
-    // {
-    //     if (dialogueChoiceUIArgs.dialogueChoice == null)
-    //     {
-    //         ResetDialogueChoices();
-    //     }
-    //     else
-    //     {
-    //         dialogueChoices = dialogueChoiceUIArgs.dialogueChoice.GetDialogueChoices();
-    //         onDialogueChosen = dialogueChoiceUIArgs.onDialogueChosen;
-
-    //         SetNewActor(dialogueChoiceUIArgs.dialogueChoice.GetDialogueChoices()[0].actor);
-    //         DisplayDialogueChoices();
-
-    //         InputManager.Instance.OnChooseDialogueAction += InputManager_OnChooseDialogueAction;
-    //     }
-    // }
-
-    // private void DialogueChoiceUI_OnChoose(object sender, DialogueChoice choice)
-    // {
-    //     ChooseDialogueOption(choice);
-    // }
-
-    // private void InputManager_OnChooseDialogueAction(object sender, int choiceIndex)
-    // {
-    //     if (dialogueChoices.Length < choiceIndex)
-    //     {
-    //         return;
-    //     }
-
-    //     ChooseDialogueOption(dialogueChoices[choiceIndex - 1]);
-    // }
 }

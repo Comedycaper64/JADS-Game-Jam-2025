@@ -135,9 +135,16 @@ public class AudioManager : MonoBehaviour
         FadeInMusic();
     }
 
+    public void ChangeMusicTrack(AudioClip newMusic)
+    {
+        musicAudioSource.clip = newMusic;
+        FadeInMusic();
+    }
+
     public void StopMusic()
     {
-        FadeOutMusic();
+        //FadeOutMusic();
+        musicAudioSource.Stop();
     }
 
     private static AudioSource PlaySFXClip(
