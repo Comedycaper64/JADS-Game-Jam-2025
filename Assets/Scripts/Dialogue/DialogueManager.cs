@@ -146,11 +146,24 @@ public class DialogueManager : MonoBehaviour
     {
         if (bIsSkipping)
         {
-            InputManager_OnAdvance();
+            if (!bLogActive && !ClueManagerUI.inventoryOpen)
+            {
+                DisplayNextSentence();
+            }
 
             yield return new WaitForSeconds(skipTimeBetweenAdvance);
 
             StartCoroutine(SkipDialogue());
+        }
+    }
+
+    private IEnumerator DialogueAdvanceDelay()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        if (!bLogActive && !ClueManagerUI.inventoryOpen)
+        {
+            DisplayNextSentence();
         }
     }
 
@@ -176,17 +189,12 @@ public class DialogueManager : MonoBehaviour
 
     private void InputManager_OnAdvance()
     {
-        if (bLogActive)
+        if (bLogActive || ClueManagerUI.inventoryOpen)
         {
             return;
         }
 
-        if (ClueManagerUI.inventoryOpen)
-        {
-            return;
-        }
-
-        DisplayNextSentence();
+        StartCoroutine(DialogueAdvanceDelay());
     }
 
     private void InputManager_OnSkipEndStart()

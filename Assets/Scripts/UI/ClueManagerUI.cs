@@ -12,6 +12,12 @@ public class ClueManagerUI : MonoBehaviour
     private ClueUI[] clueUIs;
     private ClueSO activeClue;
 
+    [SerializeField]
+    private AudioClip clueGetSFX;
+
+    [SerializeField]
+    private AudioClip inventoryOpenSFX;
+
     [Header("Clue Get UI")]
     [SerializeField]
     private CanvasGroupFader clueGetFader;
@@ -91,7 +97,7 @@ public class ClueManagerUI : MonoBehaviour
         SetupClueUI(newClueNumber - 1, newClue);
         SetupNewClueUI(newClue);
 
-        //Play Clue Get SFX
+        AudioManager.PlaySFX(clueGetSFX, 1f, 0, transform.position);
 
         clueGetFader.ToggleFade(true);
         clueGetFader.ToggleBlockRaycasts(true);
@@ -132,6 +138,8 @@ public class ClueManagerUI : MonoBehaviour
 
         clueInventoryFader.ToggleFade(inventoryOpen);
         clueInventoryFader.ToggleBlockRaycasts(inventoryOpen);
+
+        AudioManager.PlaySFX(inventoryOpenSFX, 1f, 0, transform.position);
     }
 
     public void TogglePresentMode(object sender, bool toggle)
@@ -148,6 +156,8 @@ public class ClueManagerUI : MonoBehaviour
         cluePresentFader.ToggleFade(toggle);
         cluePresentButton.interactable = toggle;
         inventoryCloseButton.interactable = !toggle;
+
+        AudioManager.PlaySFX(inventoryOpenSFX, 1f, 0, transform.position);
     }
 
     public void PresentClue()

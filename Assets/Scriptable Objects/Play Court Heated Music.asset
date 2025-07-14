@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd15604a1cff8842a6dedff5db86314, type: 3}
-  m_Name: Protagonist Actor
+  m_Script: {fileID: 11500000, guid: e81c5cd62589bed4abe66f4c058a60b9, type: 3}
+  m_Name: Play Court Heated Music
   m_EditorClassIdentifier: 
-  actorName: The Victim
-  actorNameColour: {r: 0, g: 0, b: 0, a: 1}
-  dialogueSprites: []
-  dialogueNoises: {fileID: 8300000, guid: 5e11d8771f2dfa64bb39e2e56275097e, type: 3}
+  newMusicTrack: {fileID: 8300000, guid: 624f5aff5f7f6b94093e072afc202fb0, type: 3}

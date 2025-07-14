@@ -17,6 +17,9 @@ public class CinematicManager : MonoBehaviour
     [SerializeField]
     private ScreenEffectManager screenEffectManager;
 
+    [SerializeField]
+    private CluePopUpUI cluePopUpUI;
+
     public static CinematicManager Instance { get; private set; }
 
     private void Awake()
@@ -41,6 +44,8 @@ public class CinematicManager : MonoBehaviour
 
     private void TryPlayNextNode()
     {
+        Debug.Log("Play Next Node");
+
         if (!cinematicNodes.TryDequeue(out currentCinematicNode))
         {
             EndCinematic();
@@ -49,7 +54,7 @@ public class CinematicManager : MonoBehaviour
 
         Type nodeType = currentCinematicNode.GetType();
 
-        //Debug.Log("Playing Node: " + nodeType.ToString());
+        Debug.Log("Playing Node: " + nodeType.ToString());
 
         if (nodeType == typeof(DialogueSO))
         {
@@ -100,6 +105,13 @@ public class CinematicManager : MonoBehaviour
             {
                 audioManager.StopMusic();
             }
+
+            TryPlayNextNode();
+        }
+        else if (nodeType == typeof(CluePopUpSO))
+        {
+            CluePopUpSO cluePopUp = currentCinematicNode as CluePopUpSO;
+            cluePopUpUI.CluePopUp(cluePopUp.clue);
 
             TryPlayNextNode();
         }

@@ -123,6 +123,7 @@ public class AudioManager : MonoBehaviour
 
     private void FadeInMusic()
     {
+        musicAudioSource.Play();
         SetMusicAudioSourceVolume(0f);
         fadeIn = true;
         fadeOut = false;
@@ -131,7 +132,6 @@ public class AudioManager : MonoBehaviour
 
     public void StartMusic()
     {
-        musicAudioSource.Play();
         FadeInMusic();
     }
 

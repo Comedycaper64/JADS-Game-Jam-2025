@@ -36,14 +36,15 @@ public class DialogueUI : MonoBehaviour
     private Image dialogueFaceSprite;
 
     private ActorSO currentActor;
+    private ActorSO lastVisibleActor;
     private AudioClip currentDialogueNoise;
     private AudioSource dialogueNoiseSource;
 
     [SerializeField]
     private TextMeshProUGUI actorNameText;
 
-    // [SerializeField]
-    // private Image actorNameFlourish;
+    [SerializeField]
+    private Image actorNameFlourish;
     private Material actorFontMaterialInstance;
 
     [SerializeField]
@@ -91,9 +92,9 @@ public class DialogueUI : MonoBehaviour
     {
         actorNameText.text = actorName;
 
-        //actorNameFlourish.color = nameColour;
+        actorNameFlourish.color = nameColour;
 
-        //dialogueTextbox.color = nameColour;
+        dialogueTextbox.color = nameColour;
 
         actorFontMaterialInstance.SetColor("_UnderlayColor", nameColour);
     }
@@ -130,6 +131,11 @@ public class DialogueUI : MonoBehaviour
         currentActor = actorSO;
 
         currentDialogueNoise = actorSO.GetDialogueNoises();
+
+        if (actorSO.GetDialogueSprites().Length > 0)
+        {
+            lastVisibleActor = actorSO;
+        }
     }
 
     private IEnumerator TypeSentence(DialogueUIEventArgs dialogueUIEventArgs)
@@ -195,18 +201,27 @@ public class DialogueUI : MonoBehaviour
 
     private void ResolveDialogueSprite(DialogueUIEventArgs dialogueUIEventArgs)
     {
+        ActorSO currentActor = dialogueUIEventArgs.actorSO;
+        if (currentActor.GetDialogueSprites().Length <= 0)
+        {
+            return;
+        }
+
         int dialogueSpriteIndex = dialogueUIEventArgs.dialogueSpriteIndex;
         Sprite newSprite = null;
 
         if (dialogueSpriteIndex >= 0)
         {
-            newSprite = dialogueUIEventArgs.actorSO.GetDialogueSprites()[
-                dialogueUIEventArgs.dialogueSpriteIndex
-            ];
+            newSprite = currentActor.GetDialogueSprites()[dialogueUIEventArgs.dialogueSpriteIndex];
         }
 
         if (newSprite != null)
         {
+            if (newSprite == dialogueFaceSprite.sprite)
+            {
+                return;
+            }
+
             StartCoroutine(ChangeSprites(newSprite));
 
             if (!bDialogueSpriteActive)

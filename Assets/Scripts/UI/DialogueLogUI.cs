@@ -50,8 +50,13 @@ public class DialogueLogUI : MonoBehaviour
     private void OnEnable()
     {
         dialogueUI.OnNewDialogue += AddDialogueLog;
-        InputManager.Instance.OnLogAction += ToggleLogUI;
+
         //DialogueManager.OnToggleDialogueUI += ToggleInput;
+    }
+
+    private void Start()
+    {
+        InputManager.Instance.OnLogAction += ToggleLogUI;
     }
 
     private void OnDisable()

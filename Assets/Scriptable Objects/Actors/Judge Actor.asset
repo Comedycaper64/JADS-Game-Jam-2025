@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd15604a1cff8842a6dedff5db86314, type: 3}
   m_Name: Judge Actor
   m_EditorClassIdentifier: 
-  actorName: 
-  actorNameColour: {r: 0, g: 0, b: 0, a: 0}
-  dialogueSprites: []
-  dialogueNoises: {fileID: 0}
+  actorName: The Judge
+  actorNameColour: {r: 0.4528302, g: 0.019223915, b: 0.019223915, a: 1}
+  dialogueSprites:
+  - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  dialogueNoises: {fileID: 8300000, guid: 13118ed98cc36064aa158bd08747a27e, type: 3}
