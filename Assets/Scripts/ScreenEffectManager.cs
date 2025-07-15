@@ -54,13 +54,13 @@ public class ScreenEffectManager : MonoBehaviour
 
     private IEnumerator DelayedEffectComplete(float delayTime)
     {
-        Debug.Log("Delay Started");
+        //Debug.Log("Delay Started");
         yield return new WaitForSeconds(delayTime);
 
         if (OnEffectComplete != null)
         {
             OnEffectComplete();
-            Debug.Log("Delay Finished");
+            //Debug.Log("Delay Finished");
             //OnEffectComplete = null;
         }
     }

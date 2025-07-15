@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
+  m_Name: Ch2 Correct 5
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actor: {fileID: 11400000, guid: f3994f5c4291cc44eb591e75fb0443f0, type: 2}
+    dialogue:
+    - "<b>Imbecile</b>. Your expansion on your previous theory is minimal. And you\u2019ve
+      simply added speculations"
+    - "You\u2019ve spun every clue into aggrandising your own ego, while nothing
+      in this room points to you staying here. In fact, why would a gang, having
+      cut off your hand to send a message, deliver it at the victim\u2019s address?"
+    - "You really haven\u2019t thought this through have you?"
+    dialogueSprites: 000000000000000000000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - ...
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - "Hmm, that does seem to contradict your story quite a bit, but luckily that
+      doesn\u2019t matter."
+    - "These two violently tortured and murdered an innocent detective for investigating
+      their gang, then cut off your hand and left it in your room for someone you
+      knew to dissuade them, probably a detective friend or something, doesn\u2019t
+      matter."
+    - "Let\u2019s send them to damnation and get them the punishment they deserve."
+    dialogueSprites: 000000000000000000000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "Another detective, that makes sense I guess\u2026"
+    - "In fact, that makes more sense, there were probably two of us! A classic buddy
+      detective team; me the charming undercover streetwise type; my partner the
+      stiff and methodical army type\u2014"
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
+    dialogue:
+    - ...
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "\u2014with an affinity for baseball\u2026"
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
+    dialogue:
+    - <size=75%>And for self defence.
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - So <i>you</i> live in the apartment?
+    - "But then\u2026 was the knife-woman all alone in killing me? The evidence from
+      the coroner\u2019s room implies that a lot happened before I lost my hands."
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - "I don\u2019t suppose you\u2019ll listen to me if I say that doesn\u2019t matter
+      and you can just point to her and finish this?"
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "No, I\u2019d like to visit my other body parts. I\u2019m sure I can figure
+      this out with just a few more clues."
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - Fine, the P.A.R.T system has just located your left hand, so get in there and
+      be quick about it.
+    dialogueSprites: 00000000

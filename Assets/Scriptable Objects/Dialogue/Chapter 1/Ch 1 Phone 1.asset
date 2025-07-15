@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
+  m_Name: Ch 1 Phone 1
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actor: {fileID: 11400000, guid: 8dd00e11d02480547ab468459dd27aec, type: 2}
+    dialogue:
+    - Mobile phone. Usable. Interfacing would be difficult.
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: e78de7732b53bdd4c8fdb5ff739cedbc, type: 2}
+    dialogue:
+    - "Luckily, it appears we received two messages since our passing.\nFrom a \u201CTem\u201D:
+      \u2018If you\u2019re out drinking again, so help me god.\u2019\nFrom a \u201CLuna\u201D:
+      \u2018Not tonight. I\u2019m out on important work.\u2019"
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - Well, it sounds like I knew them. A wife and a friend, maybe?
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 8dd00e11d02480547ab468459dd27aec, type: 2}
+    dialogue:
+    - ...
+    - Hard kitchen flooring. Hairs stand on end. A lengthy walk. A change of environment.
+    dialogueSprites: 0000000000000000
+  - actor: {fileID: 11400000, guid: 0f4975068c7bceb409ac33824571a3f5, type: 2}
+    dialogue:
+    - "Don\u2019t forget the comfortable tinge of heartache!"
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - ...
+    dialogueSprites: 

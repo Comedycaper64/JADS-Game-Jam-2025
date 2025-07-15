@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
+  m_Name: Ch 1 Autopsy 1
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actor: {fileID: 11400000, guid: e78de7732b53bdd4c8fdb5ff739cedbc, type: 2}
+    dialogue:
+    - How fortuitous, this appears to be our autopsy report. Allow me a moment to
+      parse its contents.
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 8dd00e11d02480547ab468459dd27aec, type: 2}
+    dialogue:
+    - Fresh ink. Messy handwriting. Lengthy document.
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - This should make things easier. Knowing my cause of death is a useful clue.
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: e78de7732b53bdd4c8fdb5ff739cedbc, type: 2}
+    dialogue:
+    - "Pay attention. We suffered rather horribly, so I shall summarise it for expediency\u2019s
+      sake. The cadaver\u2019s name is \u201CJake R. Hackner\u201D."
+    - Blunt force trauma on the body and head, indicating a possible concussion.
+      A knife-wound on the nose, cleaving away most of it. This wound was amateurly
+      treated.
+    - The hands were severed by a clean cut with almost surgical precision. The body
+      was heavily compressed, leading to the severance of one leg at the knee. Blood
+      found near a trash compactor matches ours.
+    dialogueSprites: 000000000000000000000000
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - "Christ\u2026 somebody must\u2019ve really had it out for me."
+    - Did I get tortured and dismembered by a gang? If I was in a trash compactor,
+      maybe they were hiding my body?
+    - "What a way to go\u2026"
+    dialogueSprites: 

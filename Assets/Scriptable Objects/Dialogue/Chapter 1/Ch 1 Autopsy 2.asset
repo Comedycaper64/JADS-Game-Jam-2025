@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
+  m_Name: Ch 1 Autopsy 2
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actor: {fileID: 11400000, guid: e78de7732b53bdd4c8fdb5ff739cedbc, type: 2}
+    dialogue:
+    - "There\u2019s more. A toxicology report is included, and shows heavy doses
+      of both alcohol and paracetamol within our bloodstream."
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - "The hell? If I was taking painkillers, then I must\u2019ve gotten injured
+      before dying."
+    - "My nose was bandaged\u2026 that must\u2019ve happened before whatever killed
+      me."
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: e78de7732b53bdd4c8fdb5ff739cedbc, type: 2}
+    dialogue:
+    - A fairly sensible conclusion.
+    dialogueSprites: 00000000

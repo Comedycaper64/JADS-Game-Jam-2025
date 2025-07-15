@@ -174,7 +174,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -664,6 +664,7 @@ MonoBehaviour:
   audioManager: {fileID: 8761118335174394386}
   dialogueManager: {fileID: 8249133058802731669}
   screenEffectManager: {fileID: 0}
+  cluePopUpUI: {fileID: 0}
 --- !u!1 &3432165009248064388
 GameObject:
   m_ObjectHideFlags: 0

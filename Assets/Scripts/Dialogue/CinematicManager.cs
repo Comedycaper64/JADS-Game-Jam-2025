@@ -44,7 +44,7 @@ public class CinematicManager : MonoBehaviour
 
     private void TryPlayNextNode()
     {
-        Debug.Log("Play Next Node");
+        //Debug.Log("Play Next Node");
 
         if (!cinematicNodes.TryDequeue(out currentCinematicNode))
         {
@@ -54,7 +54,7 @@ public class CinematicManager : MonoBehaviour
 
         Type nodeType = currentCinematicNode.GetType();
 
-        Debug.Log("Playing Node: " + nodeType.ToString());
+        //Debug.Log("Playing Node: " + nodeType.ToString());
 
         if (nodeType == typeof(DialogueSO))
         {

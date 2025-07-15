@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d3a7e0832a0024688f00cb8046090a, type: 3}
+  m_Name: Ch1 Present Autopsy
+  m_EditorClassIdentifier: 
+  clueQuestionText: What describes how I died?
+  requiredClueKey: AUTOPSY
+  alternateClueKey: 
+  wrongClueConversation: {fileID: 11400000, guid: 98f3cf6452c1ff042af8e3d571bdb263, type: 2}
+  correctClueConversation: {fileID: 11400000, guid: 5cec22392b05186488cfc88033302004, type: 2}

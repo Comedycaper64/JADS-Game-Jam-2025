@@ -8,6 +8,7 @@ public class ClueSO : ConversationNode
     [SerializeField]
     private string clueName;
 
+    [TextArea]
     [SerializeField]
     private string clueDescription;
 

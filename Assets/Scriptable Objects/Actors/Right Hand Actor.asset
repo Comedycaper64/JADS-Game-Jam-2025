@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd15604a1cff8842a6dedff5db86314, type: 3}
   m_Name: Right Hand Actor
   m_EditorClassIdentifier: 
-  actorName: 
-  actorNameColour: {r: 0, g: 0, b: 0, a: 0}
+  actorName: Dexter Hand
+  actorNameColour: {r: 1, g: 1, b: 1, a: 1}
   dialogueSprites: []
-  dialogueNoises: {fileID: 0}
+  dialogueNoises: {fileID: 8300000, guid: cceaf6356b5907843b2567c0a1ad75c8, type: 3}

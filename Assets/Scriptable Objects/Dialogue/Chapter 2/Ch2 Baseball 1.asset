@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
+  m_Name: Ch2 Baseball 1
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actor: {fileID: 11400000, guid: 310c30a1fc497964d884742045e5f214, type: 2}
+    dialogue:
+    - A selection of well-worn items. A large bat, a leathery mitt, and a baseball.
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "That sounds like baseball gear. Must\u2019ve been my hobby."
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 310c30a1fc497964d884742045e5f214, type: 2}
+    dialogue:
+    - ...
+    - Repetitive motions. Strained wrist. Calloused fingers. Gripping an item far
+      smaller than a bat.
+    dialogueSprites: 0000000000000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "A smaller item that caused callouses? There\u2019s nothing here like that
+      though\u2026"
+    dialogueSprites: 

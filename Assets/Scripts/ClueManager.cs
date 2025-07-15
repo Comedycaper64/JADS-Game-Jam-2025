@@ -28,6 +28,10 @@ public class ClueManager : MonoBehaviour
         }
         Instance = this;
 
+        transform.SetParent(null);
+
+        DontDestroyOnLoad(this);
+
         if (setup)
         {
             ClueSO startingClue = setup.GetFirstClue();
@@ -78,7 +82,7 @@ public class ClueManager : MonoBehaviour
     {
         OnCluePresent?.Invoke(this, false);
 
-        if (presentedClue.GetClueKey() == currentCluePresent.GetRequiredKey())
+        if (currentCluePresent.EvaluateKey(presentedClue.GetClueKey()))
         {
             FinishCluePresent();
         }

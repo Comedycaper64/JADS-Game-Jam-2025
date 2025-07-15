@@ -13,6 +13,9 @@ public class CluePresentSO : ConversationNode
     private string requiredClueKey;
 
     [SerializeField]
+    private string alternateClueKey;
+
+    [SerializeField]
     private ConversationSO wrongClueConversation;
 
     [SerializeField]
@@ -23,9 +26,18 @@ public class CluePresentSO : ConversationNode
         return clueQuestionText;
     }
 
-    public string GetRequiredKey()
+    public bool EvaluateKey(string key)
     {
-        return requiredClueKey;
+        if (key == requiredClueKey)
+        {
+            return true;
+        }
+        else if (key == alternateClueKey)
+        {
+            return true;
+        }
+
+        return false;
     }
 
     public ConversationSO GetWrongClueConversation()

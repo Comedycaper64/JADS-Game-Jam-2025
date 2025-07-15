@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
+  m_Name: Ch2 Correct 4
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - I was probably a married man, having left my ring on the nightstand to better
+      sell the cover, perhaps necessary for a seduction target, probably knife-woman.
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: f3994f5c4291cc44eb591e75fb0443f0, type: 2}
+    dialogue:
+    - "Psh, as if I\u2019d ever fall for you... <size=50%>again."
+    - "And a bat is a horrible self defence weapon, it\u2019s slow, it\u2019s too
+      heavy, and bad in close quarters."
+    dialogueSprites: 0000000000000000
+  - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
+    dialogue:
+    - ...
+    - If speed is an issue, you could wield it like a quarterstaff. It has excellent
+      weight distribution for versatile use.
+    dialogueSprites: 0000000000000000
+  - actor: {fileID: 11400000, guid: f3994f5c4291cc44eb591e75fb0443f0, type: 2}
+    dialogue:
+    - Still not as quick as a knife.
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - "ORDER! Order please, let\u2019s get the conversation back to the case please."
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
+    dialogue:
+    - 'Unfortunately I must agree with her. The backpack being for cover makes sense,
+      but it starts falling apart when you take the following into consideration:
+      Why would you have two toothbrushes? And two phone chargers?'
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - For a burner phone probably, and maybe the toothbrush helps with method acting,
+      a professional detective needs to include every detail in their mission!
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
+    dialogue:
+    - "Why wouldn\u2019t you fold the clothes as nicely for the cover outfit, and
+      why does it have more boxers than anything else?"
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - Also to get into character, wrinkly clothes and a re-worn T-shirt may help
+      sell the look.
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: f3994f5c4291cc44eb591e75fb0443f0, type: 2}
+    dialogue:
+    - (giggle)
+    dialogueSprites: 00000000

@@ -13,27 +13,23 @@ MonoBehaviour:
   m_Name: Ch1 Intro 2
   m_EditorClassIdentifier: 
   dialogues:
+  - actor: {fileID: 11400000, guid: 8f6bf38e574ac40409fd7133d513c7d1, type: 2}
+    dialogue:
+    - "A warmth fills you, or more accurately, you fill the warmth. Your soul quickly
+      reknitting its ties to its familiar matter. The dragon\u2019s voice now more
+      distant but still clear."
+    dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
-    - "Ah, you\u2019re here, good."
-    dialogueSprites: 00000000
-  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
-    dialogue:
-    - What game starts with a dragon just showing up?
-    dialogueSprites: 00000000
-  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
-    dialogue:
-    - The court is ready to hear your case now, let me read you through the rules
-      so we can get going as quick as possible!
-    - Welcome to the Court of Unsolved Mortal Issues, UMI Court for short, your case
-      will hereby be heard blablabla hm-m-m
-    - -ah yes, here we go. Who's here to read, am I right?
-    - Since your soul has found no rest after it has left your body the court has
-      summoned the souls of the people you felt closest to at your time of passing.
-    - "We have granted you access as a limbic to our P.A.R.T. system, blablabla\u2026
-      okay yes and then we summon them and proceed to trial, any questions?\u201D"
-    dialogueSprites: 0000000000000000000000000000000000000000
-  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
-    dialogue:
-    - Yes.
-    dialogueSprites: 00000000
+    - "You\u2019ve now engaged the Phantom Activation and Reanimation Technology,
+      that makes use of your unique situation of being both attached and detached
+      from the physical realm, which allows you to travel back in time and visit
+      and move your body, or parts in your case."
+    - Unfortunately you can only visit them while they are both unperceived and not
+      yet rotted away, so please avoid people and such.
+    - "Alright here we are, normally I\u2019d tell you to get up and take a stroll
+      around, but it seems your bodily state may give us some complications on that
+      front, so just have a look, I suppose."
+    - This location contains your head, torso, and leg. Make sure to get along, and
+      good luck.
+    dialogueSprites: 00000000000000000000000000000000

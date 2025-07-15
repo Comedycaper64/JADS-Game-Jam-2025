@@ -15,6 +15,7 @@ public class EnvironmentManager : MonoBehaviour
     public Action OnInvestigationFinished;
 
     public static Action OnSensationDialogue;
+    public static Action OnInvestigationStart;
 
     private void Start()
     {
@@ -68,6 +69,7 @@ public class EnvironmentManager : MonoBehaviour
     public void BeginInvestigation()
     {
         isBusy = false;
+        OnInvestigationStart?.Invoke();
     }
 
     public void NecessaryInteractionAdvance()

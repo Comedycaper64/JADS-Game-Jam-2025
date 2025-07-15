@@ -13,13 +13,22 @@ MonoBehaviour:
   m_Name: Ch1 Intro 1
   m_EditorClassIdentifier: 
   dialogues:
+  - actor: {fileID: 11400000, guid: 8f6bf38e574ac40409fd7133d513c7d1, type: 2}
+    dialogue:
+    - You stand before a lectern with an empty notebook before you. On both sides
+      of you are empty stands, giving you the sense that you arrived early for something.
+    - Only a few heartbeats later the darkness behind an elevated pulpit stirs. Two
+      bright yellow eyes pierce the darkness and a scaly head emerges from the shadow.
+    - Raising its head, a monstrous body emerges from the alcove. A red dragon sits
+      before you.
+    dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
     - "Ah, you\u2019re here, good."
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
     dialogue:
-    - What game starts with a dragon just showing up?
+    - What fever dream starts with a dragon just showing up?
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
@@ -37,3 +46,97 @@ MonoBehaviour:
     dialogue:
     - Yes.
     dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - "Fine, okay, ask them in a minute, let me just\u2026"
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 8f6bf38e574ac40409fd7133d513c7d1, type: 2}
+    dialogue:
+    - The darkness seems to deepen and when it retreats you find the positions behind
+      the two lecterns next to you have been filled.
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - "Okay all defendants are present, access to systems given\u2026"
+    - "Yep that\u2019s all, let\u2019s get this started."
+    dialogueSprites: 0000000000000000
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - Uhm.
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - Oh yes, was there anything unclear?
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - What in the hell is going on, who are you, what is this, who are they and how
+      do I get out of here?
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - "Okay, I\u2019ll explain this once so pay attention will you?"
+    - "Hello, you are dead. But for some reason you couldn\u2019t just pass on like
+      every other normal person and now you\u2019re here. Because stubborn people
+      like you that feel like they\u2019re owed something more after their death
+      come here, and there\u2019s an entire waiting list so let\u2019s not dawdle
+      okay?"
+    - 'We call cases such as yours that remain in limbo: limbics. After some trial
+      and error, we have developed this court system to help you stubborn asses on
+      their way.'
+    - "Rules of the court state you aren\u2019t allowed your memories, for your judgement
+      in the trial needs to be impartial, so if you don\u2019t know who you are,
+      don\u2019t worry, neither do I, it doesn\u2019t matter, and you\u2019re probably
+      better off not knowing."
+    - "Now, with all that out of the way, just point at one of these two people and
+      say \u2018that person is the culprit\u2019, they get sent to damnation and
+      we can wrap this up and all go on our merry way"
+    dialogueSprites: 0000000000000000000000000000000000000000
+  - actor: {fileID: 11400000, guid: f3994f5c4291cc44eb591e75fb0443f0, type: 2}
+    dialogue:
+    - "If you point at me I\u2019ll make you regret it."
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - "I wasn\u2019t gonna\u2014"
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: f3994f5c4291cc44eb591e75fb0443f0, type: 2}
+    dialogue:
+    - Good.
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
+    dialogue:
+    - ...
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - Go on, pick one.
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - Did you say damnation?
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - M-hm.
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - But why?
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - (sigh), Well it was worth a try... <size=50%>you damn stubborn types.
+    - "I suppose you\u2019ll want to investigate first before passing your judgement?"
+    dialogueSprites: 0000000000000000
+  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+    dialogue:
+    - I suppose?
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - "How original. Very well then, let\u2019s look into your case\u2026"
+    - "Ah, well at least cut hand cases are usually solved quickly\u2026"
+    - "So ehm, let\u2019s see\u2026 Instructions, yes: Close your eyes and uh, think
+      about your body, and let\u2019s go."
+    dialogueSprites: 0000000000000000
