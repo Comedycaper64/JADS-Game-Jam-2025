@@ -22,10 +22,16 @@ public class ScreenEffectManager : MonoBehaviour
     private CanvasGroupFader courtRoomFader;
 
     [SerializeField]
+    private CanvasGroupFader altCourtRoomFader;
+
+    [SerializeField]
     private AudioClip screenFlashSFX;
 
     [SerializeField]
     private AudioClip cluePresentSFX;
+
+    [SerializeField]
+    private AudioClip cluePresentVocalSFX;
 
     private Action OnEffectComplete;
 
@@ -82,7 +88,7 @@ public class ScreenEffectManager : MonoBehaviour
                 break;
             case ScreenEffect.whiteFlash:
                 effectAnimator.SetTrigger("flash");
-                AudioManager.PlaySFX(screenFlashSFX, 0.5f, 0, Camera.main.transform.position);
+                AudioManager.PlaySFX(screenFlashSFX, 1f, 5, Camera.main.transform.position);
                 OnEffectComplete();
                 break;
             case ScreenEffect.fadeFromBlack:
@@ -103,10 +109,24 @@ public class ScreenEffectManager : MonoBehaviour
                 courtRoomFader.ToggleBlockRaycasts(false);
                 StartCoroutine(DelayedEffectComplete(0.1f));
                 break;
+            case ScreenEffect.enableAltCourt:
+                altCourtRoomFader.ToggleFade(true);
+                StartCoroutine(DelayedEffectComplete(2f));
+                break;
+            case ScreenEffect.disableAltCourt:
+                altCourtRoomFader.ToggleFade(false);
+                StartCoroutine(DelayedEffectComplete(2f));
+                break;
             case ScreenEffect.cluePresent:
-                //Toggle present effect
                 effectAnimator.SetTrigger("present");
-                AudioManager.PlaySFX(cluePresentSFX, 0.5f, 0, Camera.main.transform.position);
+                AudioManager.PlaySFX(cluePresentSFX, 0.75f, 0, Camera.main.transform.position);
+                AudioManager.PlaySFX(
+                    cluePresentVocalSFX,
+                    1f,
+                    0,
+                    Camera.main.transform.position,
+                    false
+                );
                 StartCoroutine(DelayedEffectComplete(2f));
                 break;
             default:

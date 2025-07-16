@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorName: Luna Slugger
   actorNameColour: {r: 0, g: 0.061187975, b: 0.6415094, a: 1}
-  dialogueSprites: []
+  dialogueSprites:
+  - {fileID: 4125636645744980110, guid: e60fef8f63c035c448a918fde69ef936, type: 3}
   dialogueNoises: {fileID: 8300000, guid: c30bca629a766fc42901646ca398a084, type: 3}

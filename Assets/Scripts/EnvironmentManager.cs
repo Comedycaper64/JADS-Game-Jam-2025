@@ -12,10 +12,9 @@ public class EnvironmentManager : MonoBehaviour
     [SerializeField]
     private EnvironmentInteractable[] necessaryInteractables;
 
-    public Action OnInvestigationFinished;
-
     public static Action OnSensationDialogue;
     public static Action OnInvestigationStart;
+    public static Action OnInvestigationFinished;
 
     private void Start()
     {

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +16,8 @@ public class ChapterManager : MonoBehaviour
     [SerializeField]
     private ConversationSO endOfInvestigationConvo;
 
+    public Action OnFinishGame;
+
     private void Start()
     {
         if (playOnstart)
@@ -22,12 +25,12 @@ public class ChapterManager : MonoBehaviour
             PlayIntroConversation();
         }
 
-        environmentManager.OnInvestigationFinished += PlayOutroConversation;
+        EnvironmentManager.OnInvestigationFinished += PlayOutroConversation;
     }
 
     private void OnDisable()
     {
-        environmentManager.OnInvestigationFinished -= PlayOutroConversation;
+        EnvironmentManager.OnInvestigationFinished -= PlayOutroConversation;
     }
 
     private void StartInvestigation()
@@ -39,7 +42,16 @@ public class ChapterManager : MonoBehaviour
     {
         //if last scene, go back to initial one
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int activeBuildIndex = SceneManager.GetActiveScene().buildIndex;
+
+        if (activeBuildIndex >= 3)
+        {
+            OnFinishGame?.Invoke();
+        }
+        else
+        {
+            SceneManager.LoadScene(activeBuildIndex + 1);
+        }
     }
 
     public void PlayIntroConversation()

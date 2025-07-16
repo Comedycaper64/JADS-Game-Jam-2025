@@ -15,5 +15,5 @@ MonoBehaviour:
   clueName: Laptop
   clueDescription: A work computer. Documents imply that the financial state of the
     household is poor. Found in the House.
-  clueSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  clueSprite: {fileID: 21300000, guid: 90c61eb220a490d41b4e1fcac94816c6, type: 3}
   clueKey: LAPTOP

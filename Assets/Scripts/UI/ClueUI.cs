@@ -15,6 +15,7 @@ public class ClueUI : MonoBehaviour
     {
         clueSO = clue;
         clueSprite.sprite = clue.GetClueSprite();
+        clueSprite.SetNativeSize();
     }
 
     public void SelectActiveClue()

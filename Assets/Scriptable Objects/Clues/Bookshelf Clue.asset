@@ -15,5 +15,5 @@ MonoBehaviour:
   clueName: Novelist's Bookshelf
   clueDescription: A bookshelf containing crime novels written by Jake R. Hackner.
     The last entry was published 5 years ago. Found in the House.
-  clueSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  clueSprite: {fileID: 21300000, guid: d1c55bad2eb090e4db465355f518436b, type: 3}
   clueKey: BOOK

@@ -95,6 +95,12 @@ public class DialogueUI : MonoBehaviour
         actorNameFlourish.color = nameColour;
 
         dialogueTextbox.color = nameColour;
+        dialogueTextbox.color = new Color(
+            dialogueTextbox.color.r,
+            dialogueTextbox.color.g,
+            dialogueTextbox.color.b,
+            0.98f
+        );
 
         actorFontMaterialInstance.SetColor("_UnderlayColor", nameColour);
     }
@@ -197,6 +203,8 @@ public class DialogueUI : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
 
         dialogueFaceSprite.sprite = newSprite;
+
+        dialogueFaceSprite.SetNativeSize();
     }
 
     private void ResolveDialogueSprite(DialogueUIEventArgs dialogueUIEventArgs)

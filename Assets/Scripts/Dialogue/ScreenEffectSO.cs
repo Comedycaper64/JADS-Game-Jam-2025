@@ -9,7 +9,9 @@ public enum ScreenEffect
     fadeFromBlack,
     enableCourt,
     disableCourt,
-    cluePresent
+    cluePresent,
+    enableAltCourt,
+    disableAltCourt
 }
 
 [CreateAssetMenu(

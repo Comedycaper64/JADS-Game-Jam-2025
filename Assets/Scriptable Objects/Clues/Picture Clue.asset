@@ -15,5 +15,5 @@ MonoBehaviour:
   clueName: Framed Picture
   clueDescription: A picture depicting a reasonably happy couple. The man wears an
     eyepatch. Found in the House.
-  clueSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  clueSprite: {fileID: 21300000, guid: 52aa553e80210214c9941a5a3639585d, type: 3}
   clueKey: PICTURE

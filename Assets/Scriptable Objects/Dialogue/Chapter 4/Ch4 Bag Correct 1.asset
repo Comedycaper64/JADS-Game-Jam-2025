@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
+  m_Name: Ch4 Bag Correct 1
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "I headed over to Luna\u2019s, since I already had some stuff there. He wasn\u2019t
+      at home and couldn\u2019t let me in."
+    - That must have been when I went to my final destination.
+    dialogueSprites: 

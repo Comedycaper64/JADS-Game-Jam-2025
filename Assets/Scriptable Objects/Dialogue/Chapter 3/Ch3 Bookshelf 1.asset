@@ -12,4 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
   m_Name: Ch3 Bookshelf 1
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - actor: {fileID: 11400000, guid: beda8c7f2ede4fb4dace328ca70724fa, type: 2}
+    dialogue:
+    - Wooden shelf.
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "\u2026And on the wooden shelf are?"
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: beda8c7f2ede4fb4dace328ca70724fa, type: 2}
+    dialogue:
+    - Various books.
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 6533eb48a63f1884e8560c0d98003a12, type: 2}
+    dialogue:
+    - "Observation: Many of the books on this shelf are crime novels written by a
+      \u201CJake R. Hackner\u201D. \nRecollection: Our name is-"
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "Yeah, don\u2019t worry, I got it. So I was a mystery novelist."
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 6533eb48a63f1884e8560c0d98003a12, type: 2}
+    dialogue:
+    - "Analysis: The author\u2019s last book was published 5 years ago."
+    dialogueSprites: 00000000

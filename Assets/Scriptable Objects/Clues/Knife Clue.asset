@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clueName: Very Sharp Knives
   clueDescription: A set of well-honed knives. Found in the House.
-  clueSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  clueSprite: {fileID: 21300000, guid: 39c2498c1e4d06d4ea980cfdb8d18745, type: 3}
   clueKey: KNIFE

@@ -13,5 +13,10 @@ MonoBehaviour:
   m_Name: Ch2 Outro
   m_EditorClassIdentifier: 
   conversationNodes:
+  - {fileID: 11400000, guid: bd9b3cb8b732d3743bb46ccdbc808b96, type: 2}
+  - {fileID: 11400000, guid: 37258099e58341f4a841997629a65c92, type: 2}
+  - {fileID: 11400000, guid: cfb63565c16d2554e963a4b0d18ccda1, type: 2}
+  - {fileID: 11400000, guid: 33760d320b327eb459d5d5f4086e96c7, type: 2}
+  - {fileID: 11400000, guid: 397831ca803b2754fa18c535dac796fb, type: 2}
   - {fileID: 11400000, guid: 72cd656cc3c4b5b41b961df7b47a7c78, type: 2}
   - {fileID: 11400000, guid: 5adc3d16f9f2d3249a4de32317f0a2e2, type: 2}

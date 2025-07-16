@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
+  m_Name: Ch4 Intro 1
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - Oh no.
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 8652157ddfb67794e8ca004c04b12b25, type: 2}
+    dialogue:
+    - "Hey boss. Good to see you haven\u2019t forgotten little old me."
+    - "Let\u2019s get into some trouble, y\u2019hear?"
+    dialogueSprites: 0000000000000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - What- why are you like this?
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 8652157ddfb67794e8ca004c04b12b25, type: 2}
+    dialogue:
+    - You tell me, big man, you tell me.
+    dialogueSprites: 00000000

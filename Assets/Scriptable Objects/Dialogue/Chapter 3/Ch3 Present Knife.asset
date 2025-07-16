@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d3a7e0832a0024688f00cb8046090a, type: 3}
+  m_Name: Ch3 Present Knife
+  m_EditorClassIdentifier: 
+  clueQuestionText: A possible murder weapon...
+  requiredClueKey: KNIFE
+  alternateClueKey: 
+  wrongClueConversation: {fileID: 11400000, guid: 04c99701089ef1b4ebd08f563140ea26, type: 2}
+  correctClueConversation: {fileID: 11400000, guid: e31c30888f6fe2e4099606bf95380eb0, type: 2}

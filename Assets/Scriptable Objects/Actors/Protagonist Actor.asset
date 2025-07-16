@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Protagonist Actor
   m_EditorClassIdentifier: 
   actorName: ???
-  actorNameColour: {r: 0.03388328, g: 0.6415094, b: 0, a: 1}
+  actorNameColour: {r: 0.9811321, g: 0.841795, b: 0.55998576, a: 1}
   dialogueSprites: []
   dialogueNoises: {fileID: 8300000, guid: 5e11d8771f2dfa64bb39e2e56275097e, type: 3}

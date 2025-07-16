@@ -12,4 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
   m_Name: Ch3 Photo 1
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - actor: {fileID: 11400000, guid: 6533eb48a63f1884e8560c0d98003a12, type: 2}
+    dialogue:
+    - 'Observation: A picture depicting a man and a woman. They seem reasonably happy
+      during the captured moment. The man wears an eyepatch, and the woman is-'
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - The lady from the courtroom. So this must be her home.
+    - And the man in the eyepatch is probably...
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 6533eb48a63f1884e8560c0d98003a12, type: 2}
+    dialogue:
+    - 'Recollection: I have been in this container for much longer than your hand
+      has been here.'
+    dialogueSprites: 00000000

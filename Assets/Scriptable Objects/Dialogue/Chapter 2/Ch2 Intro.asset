@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Ch2 Intro
   m_EditorClassIdentifier: 
   conversationNodes:
+  - {fileID: 11400000, guid: 5e2703586bc8c53488a1fcf42c65e772, type: 2}
   - {fileID: 11400000, guid: 397831ca803b2754fa18c535dac796fb, type: 2}
   - {fileID: 11400000, guid: abe5a1153d6edad47aa1741f0d9725f3, type: 2}

@@ -26,6 +26,7 @@ public class CluePopUpUI : MonoBehaviour
         else
         {
             clueImage.sprite = clue.GetClueSprite();
+            clueImage.SetNativeSize();
             fader.ToggleFade(true);
         }
 

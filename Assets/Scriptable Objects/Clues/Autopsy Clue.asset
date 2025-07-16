@@ -15,6 +15,6 @@ MonoBehaviour:
   clueName: Autopsy Report
   clueDescription: Blunt force trauma on the body and head. Knife-wound cleaving
     away the nose. Hands cleanly cut away. Heavy full-body compression, leading to
-    the severance of a leg.
-  clueSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    the severance of a leg. Left eye lost in prior, unrelated incident.
+  clueSprite: {fileID: 21300000, guid: e3c6d55f70125cc43b55e174e8f3a505, type: 3}
   clueKey: AUTOPSY

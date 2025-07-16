@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d3a7e0832a0024688f00cb8046090a, type: 3}
+  m_Name: Ch3 Present Phone
+  m_EditorClassIdentifier: 
+  clueQuestionText: A method of communication...
+  requiredClueKey: PHONE
+  alternateClueKey: 
+  wrongClueConversation: {fileID: 11400000, guid: 43a0e30c263ba8e48a295744925074e5, type: 2}
+  correctClueConversation: {fileID: 11400000, guid: 55b07c623f2ca074d988407dbb9344c0, type: 2}

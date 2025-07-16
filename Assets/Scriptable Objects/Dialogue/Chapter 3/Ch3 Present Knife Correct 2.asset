@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
+  m_Name: Ch3 Present Knife Correct 2
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "You\u2019d know how to stage a murder perfectly, given all the crime novels
+      you\u2019ve had access to!"
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 652e3e8dec140d349bb55d8bf482f9bb, type: 2}
+    dialogue:
+    - Are you-
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "The motive is also clear as day. We were in a relationship, and you were jealous
+      of my success. I saw your cookbooks in the kitchen, you must\u2019ve hated
+      being less popular than me!"
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
+    dialogue:
+    - ...Hey I think maybe you should-
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 652e3e8dec140d349bb55d8bf482f9bb, type: 2}
+    dialogue:
+    - "I <b>wish</b> you were successful. If you picked up your pen instead of your
+      beer bottle, maybe we\u2019d be in a better situation."
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "That settles it then. All that\u2019s left is to figure out why you\u2019re
+      here, bat-detective."
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
+    dialogue:
+    - ...You should really-
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "If this was a lover\u2019s quarrel, then you must\u2019ve been a hired detective.
+      Temmie was having an affair and I asked you to look into it!"
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 652e3e8dec140d349bb55d8bf482f9bb, type: 2}
+    dialogue:
+    - Oh my god.
+    dialogueSprites: 00000000

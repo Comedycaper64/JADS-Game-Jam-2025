@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
+  m_Name: Ch4 Outro 1
+  m_EditorClassIdentifier: 
+  dialogues:
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "I think I\u2019ve got it figured out. What really happened was-"
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 652e3e8dec140d349bb55d8bf482f9bb, type: 2}
+    dialogue:
+    - "There\u2019s no need. We\u2019ll tell you exactly what played out."
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "Wait, what? Why the hell didn\u2019t you do that befo-"
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 652e3e8dec140d349bb55d8bf482f9bb, type: 2}
+    dialogue:
+    - Shut up and listen.
+    - You had borrowed a bunch of money from a loan shark to make up for your pitiful
+      income.
+    - "You went to visit their office again to explain why you haven\u2019t paid
+      them back. Some members of their organisation didn\u2019t take kindly to that."
+    - They mutilated you, threw you into a trash compactor, then distributed your
+      hands to us as a warning to pay back your loan.
+    - Satisfied?
+    dialogueSprites: 0000000000000000000000000000000000000000
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - Well, I suppose that takes care of that, the ones sent to damnation shall be
+      the members of that-
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "Hold on! That\u2019s completely wrong!"
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - I am <i>very</i> eager to conclude proceedings, so if you have a counter-argument,
+      make it quick.
+    dialogueSprites: 00000000

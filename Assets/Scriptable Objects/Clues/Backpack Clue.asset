@@ -15,5 +15,5 @@ MonoBehaviour:
   clueName: Hastily-Packed Rucksack
   clueDescription: A backpack containing clothing, a phone charger, a toothbrush,
     and an eyepatch. Found in the Apartment.
-  clueSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  clueSprite: {fileID: 21300000, guid: d2312cc8b0e362240bb47a9ec5a4cbe6, type: 3}
   clueKey: BACKPACK

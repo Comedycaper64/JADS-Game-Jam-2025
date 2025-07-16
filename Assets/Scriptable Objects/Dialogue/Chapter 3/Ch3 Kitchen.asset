@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationNodes:
   - {fileID: 11400000, guid: cb75c73bc3ec7a54e81c7479533739dc, type: 2}
+  - {fileID: 11400000, guid: 9e17a22545acd4547ad576326374e061, type: 2}

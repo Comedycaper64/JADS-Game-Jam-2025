@@ -12,4 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
   m_Name: Ch3 Outro 1
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "Alright, this time for sure! It\u2019s over, murderer!"
+    dialogueSprites: 
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
+    dialogue:
+    - "Excellent, any longer and I\u2019ll be late for brunch with the Council."
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 652e3e8dec140d349bb55d8bf482f9bb, type: 2}
+    dialogue:
+    - "Forgive me for not having high hopes. What have you \u2018deduced\u2019 this
+      time?"
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - Taking a look around your house was enlightening, <i>Temmie</i>. Especially
+      when I was able to locate the murder weapon!
+    dialogueSprites: 

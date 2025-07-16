@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e128a1de23a7bb4eb353e8bc0cbaa7c, type: 3}
+  m_Name: Ch3 Present Knife Correct
+  m_EditorClassIdentifier: 
+  conversationNodes:
+  - {fileID: 11400000, guid: 37258099e58341f4a841997629a65c92, type: 2}
+  - {fileID: 11400000, guid: 28e29bf4e89daa242bcaf0f9419563d1, type: 2}
+  - {fileID: 11400000, guid: 2b6816b607b3a0d4f9e8403ce74e90b3, type: 2}
+  - {fileID: 11400000, guid: 208c0dc9a7832694f83a4f6e9c342667, type: 2}
+  - {fileID: 11400000, guid: c0c76bb8b6b4c0e48b1957f6a9ba54c5, type: 2}
+  - {fileID: 11400000, guid: a315438ac986a234387c8bab578fff5e, type: 2}
+  - {fileID: 11400000, guid: c04880d9147d68344991a9595fcce9f2, type: 2}
+  - {fileID: 11400000, guid: c6bd225ce35d3a34cbe49b64938d5cf2, type: 2}
+  - {fileID: 11400000, guid: 37258099e58341f4a841997629a65c92, type: 2}
+  - {fileID: 11400000, guid: 33760d320b327eb459d5d5f4086e96c7, type: 2}
+  - {fileID: 11400000, guid: e09ccee79c8f27e46a4bd9545159600f, type: 2}
+  - {fileID: 11400000, guid: e5392d696564d8c4e87b12f1bfccf3a6, type: 2}

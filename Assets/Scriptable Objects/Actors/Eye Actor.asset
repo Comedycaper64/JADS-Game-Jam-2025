@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Eye Actor
   m_EditorClassIdentifier: 
   actorName: Keen Observer
-  actorNameColour: {r: 1, g: 1, b: 1, a: 1}
-  dialogueSprites: []
+  actorNameColour: {r: 0.9811321, g: 0.841795, b: 0.55998576, a: 1}
+  dialogueSprites:
+  - {fileID: 21300000, guid: f3ed39bcb7bd19d4f91aab4485cba292, type: 3}
   dialogueNoises: {fileID: 8300000, guid: cceaf6356b5907843b2567c0a1ad75c8, type: 3}

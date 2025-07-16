@@ -36,7 +36,9 @@ MonoBehaviour:
     - The hands were severed by a clean cut with almost surgical precision. The body
       was heavily compressed, leading to the severance of one leg at the knee. Blood
       found near a trash compactor matches ours.
-    dialogueSprites: 000000000000000000000000
+    - The left eye is missing, but that is due to a prior injury. That is to say,
+      we lost an eye some time ago in an unrelated incident.
+    dialogueSprites: 00000000000000000000000000000000
   - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
     dialogue:
     - "Christ\u2026 somebody must\u2019ve really had it out for me."

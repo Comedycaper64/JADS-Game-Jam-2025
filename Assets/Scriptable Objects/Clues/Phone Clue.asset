@@ -20,5 +20,5 @@ MonoBehaviour:
 
     ''Luna'' ~ "Not tonight.
     I''m out on important work."'
-  clueSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  clueSprite: {fileID: 21300000, guid: 058d106a07f3e1540bbf23c23bb2869a, type: 3}
   clueKey: PHONE

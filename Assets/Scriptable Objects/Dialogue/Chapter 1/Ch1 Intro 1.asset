@@ -116,7 +116,7 @@ MonoBehaviour:
     dialogue:
     - Did you say damnation?
     dialogueSprites: 
-  - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
+  - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
     - M-hm.
     dialogueSprites: 00000000

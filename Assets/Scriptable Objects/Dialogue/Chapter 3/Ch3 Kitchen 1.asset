@@ -12,4 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935641304aedb9d478b0f4089f044689, type: 3}
   m_Name: Ch3 Kitchen 1
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - actor: {fileID: 11400000, guid: 6533eb48a63f1884e8560c0d98003a12, type: 2}
+    dialogue:
+    - "Observation: A thoroughly cleaned kitchen. There are cookbooks here written
+      by a \u201CTemmie Pare\u201D. The knives here are expertly honed."
+    dialogueSprites: 00000000
+  - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
+    dialogue:
+    - "Very sharp knives? Well isn\u2019t that interesting\u2026"
+    dialogueSprites: 

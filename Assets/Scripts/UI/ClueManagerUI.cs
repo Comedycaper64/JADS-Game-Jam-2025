@@ -113,10 +113,11 @@ public class ClueManagerUI : MonoBehaviour
     private void SetupNewClueUI(ClueSO newClue)
     {
         clueGetImage.sprite = newClue.GetClueSprite();
+
         clueGetNameText.text = newClue.GetClueName();
         clueGetDescriptionText.text = newClue.GetClueDescription();
         clueGetText.text =
-            newClue.GetClueName() + " had been added to your investigative chronicle. (Your brain)";
+            newClue.GetClueName() + " has been added to the investigative chronicle.";
     }
 
     public void CloseNewClue()
