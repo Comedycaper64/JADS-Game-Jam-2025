@@ -15,12 +15,13 @@ MonoBehaviour:
   dialogues:
   - actor: {fileID: 11400000, guid: 310c30a1fc497964d884742045e5f214, type: 2}
     dialogue:
-    - A door leading outside. A wet, metal walkway. A streak of lumpy fluid on the
-      door exterior.
+    - A rough door leading outside. A wet, metal walkway. A streak of lumpy fluid
+      on the door exterior.
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - "So a fire escape where somebody\u2026 puked outside?"
+    - "A hotel room with two exits... so this is a fire escape where somebody\u2026
+      puked outside?"
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 310c30a1fc497964d884742045e5f214, type: 2}
     dialogue:

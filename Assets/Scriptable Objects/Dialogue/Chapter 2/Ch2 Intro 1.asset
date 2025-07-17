@@ -23,6 +23,7 @@ MonoBehaviour:
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - Well, this is gonna be difficult. I hope feeling around will be enough.
-    - This seems like some sort of apartment. Is this where I lived?
+    - Well, this is gonna be difficult without an eye. I hope feeling around will
+      be enough.
+    - This seems like some sort of hotel room. Is this where I was staying?
     dialogueSprites: 

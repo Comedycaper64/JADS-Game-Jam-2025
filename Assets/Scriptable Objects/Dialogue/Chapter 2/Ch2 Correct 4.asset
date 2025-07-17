@@ -16,7 +16,7 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
     - I was probably a married man, having left my ring on the nightstand to better
-      sell the cover, perhaps necessary for a seduction target, probably knife-woman.
+      sell a cover story. Perhaps I needed to seduce someone, maybe knife-woman.
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: f3994f5c4291cc44eb591e75fb0443f0, type: 2}
     dialogue:
@@ -37,7 +37,7 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
     - "ORDER! Order please, let\u2019s get the conversation back to the case please."
-    dialogueSprites: 00000000
+    dialogueSprites: 01000000
   - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
     dialogue:
     - 'Unfortunately I must agree with her. The backpack being for cover makes sense,
@@ -46,8 +46,9 @@ MonoBehaviour:
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - For a burner phone probably, and maybe the toothbrush helps with method acting,
-      a professional detective needs to include every detail in their mission!
+    - I could need an extra charger for a burner phone, and maybe the toothbrush
+      helps with method acting. A professional detective needs to include every detail
+      in their mission!
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
     dialogue:

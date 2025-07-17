@@ -23,7 +23,7 @@ MonoBehaviour:
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - "There\u2019s a trash compactor below the fire escape, isn\u2019t there, Luna?"
+    - Your room is pretty high up, right, Luna?
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 1de7f7cff3a7bcd4289d1e4e8ef50948, type: 2}
     dialogue:
@@ -32,7 +32,7 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
     - "After failing to get in and puking my guts out, with a concussion and an alcohol-fuelled
-      headache, I must\u2019ve slipped and fallen to my death."
+      headache, I must\u2019ve slipped on the wet walkway and fell to my death."
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 652e3e8dec140d349bb55d8bf482f9bb, type: 2}
     dialogue:

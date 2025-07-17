@@ -15,8 +15,7 @@ MonoBehaviour:
   dialogues:
   - actor: {fileID: 11400000, guid: 0f4975068c7bceb409ac33824571a3f5, type: 2}
     dialogue:
-    - Quite a few things were taken from our corpse. Oh, what a cold and cruel world
-      we live in!
+    - Our possessions were pilfered and scattered about! The cheek!
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 8dd00e11d02480547ab468459dd27aec, type: 2}
     dialogue:

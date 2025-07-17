@@ -32,8 +32,8 @@ MonoBehaviour:
       income.
     - "You went to visit their office again to explain why you haven\u2019t paid
       them back. Some members of their organisation didn\u2019t take kindly to that."
-    - They mutilated you, threw you into a trash compactor, then distributed your
-      hands to us as a warning to pay back your loan.
+    - They mutilated you, threw you into the trash, then distributed your hands to
+      us as a threat to pay back your loan.
     - Satisfied?
     dialogueSprites: 0000000000000000000000000000000000000000
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
@@ -49,4 +49,4 @@ MonoBehaviour:
     dialogue:
     - I am <i>very</i> eager to conclude proceedings, so if you have a counter-argument,
       make it quick.
-    dialogueSprites: 00000000
+    dialogueSprites: 01000000

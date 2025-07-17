@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065d2e9e5edb1914195c1e0029bdf5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 8116661453809449655}
   fader: {fileID: 1109657193317212104}
 --- !u!225 &4095515322301681605
 CanvasGroup:

@@ -17,9 +17,9 @@ public class SensationUI : MonoBehaviour
         EnvironmentManager.OnSensationDialogue -= SpawnDialogueBubble;
     }
 
-    private void SpawnDialogueBubble()
+    private void SpawnDialogueBubble(object sender, string dialogue)
     {
-        dialogueBubbles[bubbleIndex].ActivateBubble();
+        dialogueBubbles[bubbleIndex].ActivateBubble(dialogue);
 
         bubbleIndex++;
 

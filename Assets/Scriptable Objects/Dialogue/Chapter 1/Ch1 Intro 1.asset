@@ -15,8 +15,9 @@ MonoBehaviour:
   dialogues:
   - actor: {fileID: 11400000, guid: 8f6bf38e574ac40409fd7133d513c7d1, type: 2}
     dialogue:
-    - You stand before a lectern with an empty notebook before you. On both sides
-      of you are empty stands, giving you the sense that you arrived early for something.
+    - You stand before a lectern with an empty notebook before you. Two more lecterns
+      are on either side of you, giving you the sense that you arrived early for
+      something.
     - Only a few heartbeats later the darkness behind an elevated pulpit stirs. Two
       bright yellow eyes pierce the darkness and a scaly head emerges from the shadow.
     - Raising its head, a monstrous body emerges from the alcove. A red dragon sits
@@ -24,24 +25,22 @@ MonoBehaviour:
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
-    - "Ah, you\u2019re here, good."
+    - "Ah, you\u2019re here. Good."
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
     dialogue:
-    - What fever dream starts with a dragon just showing up?
+    - <size=75%>What kind of fever dream starts with a dragon-
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
     - The court is ready to hear your case now, let me read you through the rules
       so we can get going as quick as possible!
-    - Welcome to the Court of Unsolved Mortal Issues, UMI Court for short, your case
-      will hereby be heard blablabla hm-m-m
-    - -ah yes, here we go. Who's here to read, am I right?
-    - Since your soul has found no rest after it has left your body the court has
-      summoned the souls of the people you felt closest to at your time of passing.
-    - "We have granted you access as a limbic to our P.A.R.T. system, blablabla\u2026
-      okay yes and then we summon them and proceed to trial, any questions?\u201D"
-    dialogueSprites: 0000000000000000000000000000000000000000
+    - Welcome to the Court of Unsolved Mortal Issues. UMI Court, for short.
+    - Your soul has found no rest after it has left your body. As such, a trial will
+      commence with you and the souls of the people you felt closest to at your time
+      of passing.
+    - Shortly, I shall summon them and proceed to trial, any questions?
+    dialogueSprites: 00000000000000000000000000000000
   - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
     dialogue:
     - Yes.
@@ -49,16 +48,16 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
     - "Fine, okay, ask them in a minute, let me just\u2026"
-    dialogueSprites: 00000000
+    dialogueSprites: 0000000001000000
   - actor: {fileID: 11400000, guid: 8f6bf38e574ac40409fd7133d513c7d1, type: 2}
     dialogue:
-    - The darkness seems to deepen and when it retreats you find the positions behind
+    - The darkness seems to deepen. When it retreats you find the positions behind
       the two lecterns next to you have been filled.
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
-    - "Okay all defendants are present, access to systems given\u2026"
-    - "Yep that\u2019s all, let\u2019s get this started."
+    - "Okay, all defendants are present, access to systems given\u2026"
+    - "That\u2019s all, let\u2019s get this started."
     dialogueSprites: 0000000000000000
   - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
     dialogue:
@@ -75,23 +74,20 @@ MonoBehaviour:
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
-    - "Okay, I\u2019ll explain this once so pay attention will you?"
-    - "Hello, you are dead. But for some reason you couldn\u2019t just pass on like
-      every other normal person and now you\u2019re here. Because stubborn people
-      like you that feel like they\u2019re owed something more after their death
-      come here, and there\u2019s an entire waiting list so let\u2019s not dawdle
-      okay?"
-    - 'We call cases such as yours that remain in limbo: limbics. After some trial
-      and error, we have developed this court system to help you stubborn asses on
-      their way.'
-    - "Rules of the court state you aren\u2019t allowed your memories, for your judgement
-      in the trial needs to be impartial, so if you don\u2019t know who you are,
-      don\u2019t worry, neither do I, it doesn\u2019t matter, and you\u2019re probably
-      better off not knowing."
+    - "<i>Fine</i>. I\u2019ll explain this once, so pay attention will you?"
+    - "Hello, <b>you are dead</b>. But for some reason you couldn\u2019t just pass
+      on to the afterlife like every other normal person. Stubborn people like you
+      feel like they\u2019re owed something after their death. There\u2019s an entire
+      waiting list so let\u2019s not dawdle okay?"
+    - We call cases such as yours "limbics". Those that remain in limbo. We have
+      developed this court system to help you stubborn asses on your way.
+    - "Rules of the court state that you aren\u2019t allowed your memories, for your
+      judgement in the trial needs to be impartial. If you don\u2019t know who you
+      are, don\u2019t worry, neither do I."
     - "Now, with all that out of the way, just point at one of these two people and
-      say \u2018that person is the culprit\u2019, they get sent to damnation and
-      we can wrap this up and all go on our merry way"
-    dialogueSprites: 0000000000000000000000000000000000000000
+      say \u2018that person is the culprit\u2019. They'll get sent to damnation and
+      we can wrap this up and all go on our merry way."
+    dialogueSprites: 0100000000000000000000000000000000000000
   - actor: {fileID: 11400000, guid: f3994f5c4291cc44eb591e75fb0443f0, type: 2}
     dialogue:
     - "If you point at me I\u2019ll make you regret it."
@@ -127,8 +123,8 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
     - (sigh), Well it was worth a try... <size=50%>you damn stubborn types.
-    - "I suppose you\u2019ll want to investigate first before passing your judgement?"
-    dialogueSprites: 0000000000000000
+    - "I presume you\u2019ll want to investigate first before passing your judgement?"
+    dialogueSprites: 0100000001000000
   - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
     dialogue:
     - I suppose?
@@ -137,6 +133,6 @@ MonoBehaviour:
     dialogue:
     - "How original. Very well then, let\u2019s look into your case\u2026"
     - "Ah, well at least cut hand cases are usually solved quickly\u2026"
-    - "So ehm, let\u2019s see\u2026 Instructions, yes: Close your eyes and uh, think
-      about your body, and let\u2019s go."
-    dialogueSprites: 0000000000000000
+    - "So ehm, let\u2019s see\u2026 Instructions, yes: Close your eyes, think about
+      your body, and let\u2019s go."
+    dialogueSprites: 0100000000000000

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Telescope Clue
   m_EditorClassIdentifier: 
   clueName: Detective's Telescope
-  clueDescription: A telescope pointing towards the street below. Found in the Apartment.
-  clueSprite: {fileID: 21300000, guid: af9134f7c037a2146bf03b6ac9b77e78, type: 3}
+  clueDescription: A telescope pointing towards the street below. Presumably used
+    for spying on someone. Found in the Hotel.
+  clueSprite: {fileID: 21300000, guid: 0f6e2b2851adbf845af2c06d00bad8e9, type: 3}
   clueKey: TELESCOPE

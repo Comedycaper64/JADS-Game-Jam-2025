@@ -29,7 +29,7 @@ MonoBehaviour:
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 8dd00e11d02480547ab468459dd27aec, type: 2}
     dialogue:
-    - ...
+    - (twitch)
     - Hard kitchen flooring. Hairs stand on end. A lengthy walk. A change of environment.
     dialogueSprites: 0000000000000000
   - actor: {fileID: 11400000, guid: 0f4975068c7bceb409ac33824571a3f5, type: 2}

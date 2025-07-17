@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ring Clue
   m_EditorClassIdentifier: 
   clueName: Familiar Wedding Ring
-  clueDescription: A tarnished ring. A reminder of better times. Found in the Apartment.
+  clueDescription: A tarnished ring. A reminder of better times. Found in the Hotel.
   clueSprite: {fileID: 21300000, guid: 68455ad1d55d0fe49b2a75dae7326a14, type: 3}
   clueKey: RING

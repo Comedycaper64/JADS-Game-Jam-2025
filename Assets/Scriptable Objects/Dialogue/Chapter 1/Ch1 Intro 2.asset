@@ -16,20 +16,14 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: 8f6bf38e574ac40409fd7133d513c7d1, type: 2}
     dialogue:
     - "A warmth fills you, or more accurately, you fill the warmth. Your soul quickly
-      reknitting its ties to its familiar matter. The dragon\u2019s voice now more
-      distant but still clear."
+      reknitting its ties to familiar matter. The dragon\u2019s voice now distant
+      but still clear."
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
     - "You\u2019ve now engaged the Phantom Activation and Reanimation Technology,
-      that makes use of your unique situation of being both attached and detached
-      from the physical realm, which allows you to travel back in time and visit
-      and move your body, or parts in your case."
-    - Unfortunately you can only visit them while they are both unperceived and not
-      yet rotted away, so please avoid people and such.
-    - "Alright here we are, normally I\u2019d tell you to get up and take a stroll
-      around, but it seems your bodily state may give us some complications on that
-      front, so just have a look, I suppose."
-    - This location contains your head, torso, and leg. Make sure to get along, and
-      good luck.
-    dialogueSprites: 00000000000000000000000000000000
+      which allows you to visit and move your deceased body, or parts of it in your
+      case."
+    - This location contains your head, torso, and leg. They will be conducting the
+      investigation. Make sure to get along, and be as brisk as possible.
+    dialogueSprites: 0000000000000000

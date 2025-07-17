@@ -17,24 +17,24 @@ MonoBehaviour:
     dialogue:
     - 'This is my theory: All the evidence points to me having been murdered by organized
       crime.'
-    - You two were probably gang members that first tortured me, then let me go,
-      maybe to set me up to reveal a safehouse of sorts.
-    - Then together, you murdered me with a bat, cut off my hands with a knife to
-      send a message and dumped my body in a trash container to get rid of the body.
+    - You two were probably gang members that first tortured me, then let me go.
+      Maybe to track me down to my house and rob it.
+    - 'Then together: you murdered me with a bat, cut off my hands with a knife to
+      send a message, and threw my body into a dumpster to get rid of it.'
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
     - "Sounds about right, I\u2019d say case closed, let\u2019s put a bow on it shall
       we?"
-    dialogueSprites: 00000000
+    dialogueSprites: 01000000
   - actor: {fileID: 11400000, guid: f3994f5c4291cc44eb591e75fb0443f0, type: 2}
     dialogue:
-    - "Just making us wear the first shoe that fits the bill huh? A little quick
-      to pass judgement wouldn\u2019t you say?"
+    - "Just making us wear the first shoe that fits huh? A little quick to pass judgement
+      wouldn\u2019t you say?"
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
     dialogue:
-    - "Hold on, what proof do you have that we\u2019re from a gang?"
+    - "Right, what proof do you have that we\u2019re from a gang?"
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
@@ -42,53 +42,52 @@ MonoBehaviour:
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
-    - The defendants are not allowed to provide unverifiable evidence since it is
-      not regulated through UMI-court technology.
+    - The defendants are not allowed to provide unverifiable evidence. It is not
+      regulated through UMI-court technology.
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
     dialogue:
-    - So we can only work with the evidence MC supplies? That seems far from fair.
+    - So we can only work with the evidence Jake supplies? That seems far from fair.
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - And not very helpful, what if they are innocent?
+    - And not very helpful, what if they <i>are</i> innocent?
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
     - "Don\u2019t tell me you feel sorry for them, look at what was done to you!"
-    dialogueSprites: 00000000
+    dialogueSprites: 01000000
   - actor: {fileID: 11400000, guid: f3994f5c4291cc44eb591e75fb0443f0, type: 2}
     dialogue:
-    - Your entire theory hangs together by nothing but wild speculation, do you really
-      want to send an innocent person to damnation on a whim? So <b>shortsighted</b>.
+    - Your entire theory hangs together by nothing but wild speculation. Do you really
+      want to send an innocent person to damnation on a whim? So <b>callous</b>.
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - "Let\u2019s not be hasty. It could just as well be that you\u2019re the woman
-      texting me and it\u2019s only him that\u2019s the culprit."
+    - "Let\u2019s not be hasty. It could be that you\u2019re the woman texting me
+      and it\u2019s only him that\u2019s the culprit."
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
     dialogue:
-    - "But I don\u2019t have a knife, remember?"
+    - ...Knives aren't really my thing.
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - "Hmmm. Hey dragon, didn\u2019t you say I could also move just parts of my body?
-      Even when they\u2019re no longer connected by anything?"
+    - Hmmm. It didn't seem like all of my body was in the coroner's office, right?
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
     - ...
-    - "(sigh), I suppose you\u2019ll want to visit other parts of your body?\r\n"
-    dialogueSprites: 0000000000000000
+    - "(sigh), I suppose you\u2019ll want to investigate with your other body parts?\r\n"
+    dialogueSprites: 0100000001000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - Yes, if I could see where they ended up I might be able to piece more of this
-      case together.
+    - Yes. If I could see where they ended up I might be able to piece together more
+      of this case.
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
-    - Fine, I think the P.A.R.T. system has just tracked down your right hand, so
+    - Fine. I think the P.A.R.T. system has just tracked down your right hand, so
       I suppose you can activate it.
     - At your leisure.
     dialogueSprites: 0000000000000000

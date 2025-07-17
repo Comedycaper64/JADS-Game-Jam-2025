@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Head Actor
   m_EditorClassIdentifier: 
   actorName: Boundless Scholar
-  actorNameColour: {r: 0.9811321, g: 0.841795, b: 0.55998576, a: 1}
+  actorNameColour: {r: 0.5943396, g: 0.19344072, b: 0.23644984, a: 1}
   dialogueSprites:
   - {fileID: 21300000, guid: ddd0ab986b6788d41b1b76ca0cf7fe32, type: 3}
   dialogueNoises: {fileID: 8300000, guid: cceaf6356b5907843b2567c0a1ad75c8, type: 3}

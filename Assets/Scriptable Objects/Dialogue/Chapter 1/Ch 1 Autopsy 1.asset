@@ -31,18 +31,17 @@ MonoBehaviour:
     - "Pay attention. We suffered rather horribly, so I shall summarise it for expediency\u2019s
       sake. The cadaver\u2019s name is \u201CJake R. Hackner\u201D."
     - Blunt force trauma on the body and head, indicating a possible concussion.
-      A knife-wound on the nose, cleaving away most of it. This wound was amateurly
-      treated.
-    - The hands were severed by a clean cut with almost surgical precision. The body
-      was heavily compressed, leading to the severance of one leg at the knee. Blood
-      found near a trash compactor matches ours.
+      One particularly nasty blow cracked the skull open. A knife-wound on the nose,
+      cleaving away most of it. This wound was amateurly treated.
+    - The hands were severed by a clean cut with almost surgical precision. One leg
+      was broken and severed at the knee. The body was located in a dumpster.
     - The left eye is missing, but that is due to a prior injury. That is to say,
       we lost an eye some time ago in an unrelated incident.
     dialogueSprites: 00000000000000000000000000000000
   - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
     dialogue:
     - "Christ\u2026 somebody must\u2019ve really had it out for me."
-    - Did I get tortured and dismembered by a gang? If I was in a trash compactor,
-      maybe they were hiding my body?
+    - Did I get tortured and dismembered by a gang? If I was in a dumpster, maybe
+      they were hiding my body?
     - "What a way to go\u2026"
     dialogueSprites: 

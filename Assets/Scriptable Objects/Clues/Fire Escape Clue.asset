@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fire Escape Clue
   m_EditorClassIdentifier: 
   clueName: Fire Escape
-  clueDescription: A wet walkway on the outside of the Apartment. The door for the
-    Apartment has a streak of vomit on it.
-  clueSprite: {fileID: 21300000, guid: 706f7c2339628344caf5400fdcccd63b, type: 3}
+  clueDescription: A wet walkway on the outside of the Apartment. The fire escape
+    door for the Hotel has a streak of vomit on its exterior side.
+  clueSprite: {fileID: 21300000, guid: 1e718c3809da3a442802fee2b2d0d81b, type: 3}
   clueKey: ESCAPE

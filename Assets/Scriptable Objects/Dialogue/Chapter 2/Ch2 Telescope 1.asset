@@ -21,7 +21,7 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
     - "Now that\u2019s exciting. I must\u2019ve been some sort of detective, using
-      this to spy on someone nearby. Might even be special agent, if I\u2019m lucky."
+      this to spy on someone nearby."
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 310c30a1fc497964d884742045e5f214, type: 2}
     dialogue:
@@ -29,7 +29,8 @@ MonoBehaviour:
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - "And if I\u2019m a detective, then of course it\u2019s a gang that killed me!
-      If I was looking into an organised crime unit, that\u2019s what must have happened."
+    - "And if I <i>am</i> a detective, then of course it\u2019s a gang that killed
+      me! If I was looking into an organised crime unit, that\u2019s what must have
+      happened."
     - "Heh\u2026 I\u2019ve got them now."
     dialogueSprites: 

@@ -16,7 +16,7 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: f3994f5c4291cc44eb591e75fb0443f0, type: 2}
     dialogue:
     - "<b>Imbecile</b>. Your expansion on your previous theory is minimal. And you\u2019ve
-      simply added speculations"
+      simply added speculations."
     - "You\u2019ve spun every clue into aggrandising your own ego, while nothing
       in this room points to you staying here. In fact, why would a gang, having
       cut off your hand to send a message, deliver it at the victim\u2019s address?"
@@ -31,14 +31,14 @@ MonoBehaviour:
     - "Hmm, that does seem to contradict your story quite a bit, but luckily that
       doesn\u2019t matter."
     - "These two violently tortured and murdered an innocent detective for investigating
-      their gang, then cut off your hand and left it in your room for someone you
-      knew to dissuade them, probably a detective friend or something, doesn\u2019t
-      matter."
+      their gang. They cut off your hand and left it in your room as a warning for
+      someone you knew, probably a detective friend or something. It doesn\u2019t
+      really matter."
     - "Let\u2019s send them to damnation and get them the punishment they deserve."
-    dialogueSprites: 000000000000000000000000
+    dialogueSprites: 010000000000000000000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - "Another detective, that makes sense I guess\u2026"
+    - "Another detective, that works I guess\u2026"
     - "In fact, that makes more sense, there were probably two of us! A classic buddy
       detective team; me the charming undercover streetwise type; my partner the
       stiff and methodical army type\u2014"
@@ -65,7 +65,7 @@ MonoBehaviour:
     dialogue:
     - "I don\u2019t suppose you\u2019ll listen to me if I say that doesn\u2019t matter
       and you can just point to her and finish this?"
-    dialogueSprites: 00000000
+    dialogueSprites: 01000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
     - "No, I\u2019d like to visit my other body parts. I\u2019m sure I can figure
@@ -73,6 +73,6 @@ MonoBehaviour:
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 4cf68a7727f4d184f8d362f0b092ac44, type: 2}
     dialogue:
-    - Fine, the P.A.R.T system has just located your left hand, so get in there and
+    - Fine, the P.A.R.T system has just located your left hand. Get in there and
       be quick about it.
     dialogueSprites: 00000000

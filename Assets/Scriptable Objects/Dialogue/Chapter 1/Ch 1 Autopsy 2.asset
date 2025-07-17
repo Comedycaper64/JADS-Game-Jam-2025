@@ -16,7 +16,7 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: e78de7732b53bdd4c8fdb5ff739cedbc, type: 2}
     dialogue:
     - "There\u2019s more. A toxicology report is included, and shows heavy doses
-      of both alcohol and paracetamol within our bloodstream."
+      of both alcohol and painkillers within our bloodstream."
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 82e68f13ee071c54faab139e0c12e7f8, type: 2}
     dialogue:

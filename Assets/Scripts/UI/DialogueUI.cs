@@ -183,6 +183,7 @@ public class DialogueUI : MonoBehaviour
                 noiseTracker++;
                 if (noiseTracker >= charsBetweenDialogueNoises)
                 {
+                    dialogueNoiseSource.Stop();
                     dialogueNoiseSource.pitch = Random.Range(LOW_PITCH_RANGE, HIGH_PITCH_RANGE);
                     dialogueNoiseSource.Play();
                     noiseTracker = 0;
@@ -270,15 +271,22 @@ public class DialogueUI : MonoBehaviour
         OnNewDialogue?.Invoke(this, new DialogueLog(dialogueArgs.actorSO, dialogueArgs.sentence));
     }
 
-    private void DialogueManager_OnToggleDialogueUI(object sender, bool e)
+    private void DialogueManager_OnToggleDialogueUI(object sender, bool toggle)
     {
-        if (e == bIsDialogueActive)
+        if (toggle == bIsDialogueActive)
         {
             return;
         }
 
+        if (toggle)
+        {
+            dialogueFaceSprite.sprite = null;
+        }
+
         ClearDialogueText();
         SetActorName("", Color.black);
-        ToggleDialogueActive(e);
+        actorSpriteFader.ToggleFade(false);
+        bDialogueSpriteActive = false;
+        ToggleDialogueActive(toggle);
     }
 }

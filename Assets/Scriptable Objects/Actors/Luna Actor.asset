@@ -15,5 +15,5 @@ MonoBehaviour:
   actorName: Luna Slugger
   actorNameColour: {r: 0, g: 0.061187975, b: 0.6415094, a: 1}
   dialogueSprites:
-  - {fileID: 4125636645744980110, guid: e60fef8f63c035c448a918fde69ef936, type: 3}
+  - {fileID: -8673236265649096141, guid: b70d4215e52de124ebb9d01fd7dfcc09, type: 3}
   dialogueNoises: {fileID: 8300000, guid: c30bca629a766fc42901646ca398a084, type: 3}

@@ -16,6 +16,6 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
     - "I headed over to Luna\u2019s, since I already had some stuff there. He wasn\u2019t
-      at home and couldn\u2019t let me in."
+      in and couldn\u2019t let me in through the front door."
     - That must have been when I went to my final destination.
     dialogueSprites: 

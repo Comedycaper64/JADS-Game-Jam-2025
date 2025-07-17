@@ -29,7 +29,7 @@ MonoBehaviour:
     dialogue:
     - "If you\u2019re committed to your inane quest to discover the truth, there\u2019s
       one last part of you to visit. Though, please don\u2019t feel obligated to-"
-    dialogueSprites: 00000000
+    dialogueSprites: 01000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
     - "I\u2019m going, I need to see this through to the end."

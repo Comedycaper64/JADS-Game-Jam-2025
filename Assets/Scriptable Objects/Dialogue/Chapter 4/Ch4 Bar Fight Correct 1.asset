@@ -24,6 +24,6 @@ MonoBehaviour:
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - "That\u2019s where I lost my nose, and probably got beaten on the head as well."
+    - "That\u2019s where I lost my nose, and probably got hit on the head as well."
     - "I wouldn\u2019t want to go home, so I would have to stay somewhere else\u2026"
     dialogueSprites: 

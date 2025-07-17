@@ -35,6 +35,7 @@ public class GameEndUI : MonoBehaviour
 
     public void PlayAudioSource()
     {
+        gameEndAudioSource.volume = PlayerOptions.GetSFXVolume();
         gameEndAudioSource.Play();
     }
 

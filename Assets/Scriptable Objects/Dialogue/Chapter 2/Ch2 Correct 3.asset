@@ -16,5 +16,5 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
     - The extra backpack is for a cover, and the baseball bat is obviously for self
-      defence, covered as a hobby object.
+      defence.
     dialogueSprites: 

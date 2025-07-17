@@ -5,14 +5,14 @@ using UnityEngine;
 public class EnvironmentManager : MonoBehaviour
 {
     private int necessaryInteractCounter = 0;
-    private float sensationDialogueCooldown = 5f;
+    private float sensationDialogueCooldown = 2f;
     private bool isBusy = true;
     private bool sensationCooldown = false;
 
     [SerializeField]
     private EnvironmentInteractable[] necessaryInteractables;
 
-    public static Action OnSensationDialogue;
+    public static EventHandler<string> OnSensationDialogue;
     public static Action OnInvestigationStart;
     public static Action OnInvestigationFinished;
 
@@ -33,10 +33,10 @@ public class EnvironmentManager : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(0) && !sensationCooldown)
-        {
-            StartCoroutine(DelayedClickTest());
-        }
+        // if (Input.GetMouseButtonDown(0) && !sensationCooldown)
+        // {
+        //     StartCoroutine(DelayedClickTest());
+        // }
     }
 
     private IEnumerator DelayedUnbusy()
@@ -45,17 +45,17 @@ public class EnvironmentManager : MonoBehaviour
         SetIsBusy(false);
     }
 
-    private IEnumerator DelayedClickTest()
-    {
-        yield return new WaitForSeconds(0.1f);
+    // private IEnumerator DelayedClickTest()
+    // {
+    //     yield return new WaitForSeconds(0.1f);
 
-        if (!isBusy)
-        {
-            OnSensationDialogue?.Invoke();
+    //     if (!isBusy)
+    //     {
+    //         OnSensationDialogue?.Invoke();
 
-            StartCoroutine(SensationCD());
-        }
-    }
+    //         StartCoroutine(SensationCD());
+    //     }
+    // }
 
     private IEnumerator SensationCD()
     {
@@ -86,6 +86,18 @@ public class EnvironmentManager : MonoBehaviour
         {
             OnInvestigationFinished?.Invoke();
         }
+    }
+
+    public void TryDisplaySensation(string sensation)
+    {
+        if (isBusy || sensationCooldown)
+        {
+            return;
+        }
+
+        OnSensationDialogue?.Invoke(this, sensation);
+
+        StartCoroutine(SensationCD());
     }
 
     public void SetIsBusy(bool isBusy)

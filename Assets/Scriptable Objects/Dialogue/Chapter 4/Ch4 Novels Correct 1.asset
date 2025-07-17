@@ -34,13 +34,14 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: 652e3e8dec140d349bb55d8bf482f9bb, type: 2}
     dialogue:
     - Then let me be extra clear. That was my idea.
-    - Luna found you and contacted me. I wanted your noble sacrifice to be worth
-      a damn.
-    dialogueSprites: 0000000000000000
+    - Luna found you and contacted me. I wanted your <b>noble</b> sacrifice to be
+      worth a damn.
+    - I cut off your hands, then put your remains in the dumpster.
+    dialogueSprites: 000000000000000000000000
   - actor: {fileID: 11400000, guid: 1de7f7cff3a7bcd4289d1e4e8ef50948, type: 2}
     dialogue:
-    - "...I did willingly agree to help her. I knew you were having an affair with
-      her, and didn\u2019t do anything about it. I owed her this much, at least."
+    - "...I did willingly agree to help her. I knew you were cheating on her with
+      me, and didn\u2019t do anything about it. I owed her this much, at least."
     - "But you should\u2019ve just gone along with her cover narrative\u2026 because
       I think that the court will indict\u2026 you."
     dialogueSprites: 0000000000000000

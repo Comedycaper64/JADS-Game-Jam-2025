@@ -16,6 +16,6 @@ MonoBehaviour:
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
     - "Based on the decor and items present in the room, I can deduce that I was
-      a very professional and meticulous person, well-organized, and ready to depart
-      at a moment\u2019s notice, with an escape route prepped."
+      a very professional and meticulous person. I was also ready to depart at a
+      moment\u2019s notice, with an escape route prepped."
     dialogueSprites: 

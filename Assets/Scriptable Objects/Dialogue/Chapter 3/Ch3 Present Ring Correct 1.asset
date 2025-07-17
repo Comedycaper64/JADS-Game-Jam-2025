@@ -19,6 +19,6 @@ MonoBehaviour:
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: f8fcab8c4022d564a841adf15e9c6654, type: 2}
     dialogue:
-    - "That\u2019s not all. There\u2019s something else that places you at that scene,
-      isn\u2019t there?"
+    - "That\u2019s not all. There\u2019s something that places <i>you</i> at that
+      scene, isn\u2019t there?"
     dialogueSprites: 00000000

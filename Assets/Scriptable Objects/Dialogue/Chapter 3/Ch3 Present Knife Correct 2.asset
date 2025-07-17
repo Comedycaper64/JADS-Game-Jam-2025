@@ -48,7 +48,7 @@ MonoBehaviour:
     dialogueSprites: 00000000
   - actor: {fileID: 11400000, guid: 4a7abaa0ab079744994023af25ed1342, type: 2}
     dialogue:
-    - "If this was a lover\u2019s quarrel, then you must\u2019ve been a hired detective.
+    - "If this was a lover\u2019s quarrel, then you must\u2019ve been a private investigator.
       Temmie was having an affair and I asked you to look into it!"
     dialogueSprites: 
   - actor: {fileID: 11400000, guid: 652e3e8dec140d349bb55d8bf482f9bb, type: 2}

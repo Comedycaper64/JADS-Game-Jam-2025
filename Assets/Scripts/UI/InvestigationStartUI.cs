@@ -4,6 +4,9 @@ using UnityEngine;
 public class InvestigationStartUI : MonoBehaviour
 {
     [SerializeField]
+    private float showTime = 4f;
+
+    [SerializeField]
     private CanvasGroupFader fader;
 
     private void Start()
@@ -29,7 +32,7 @@ public class InvestigationStartUI : MonoBehaviour
 
     private IEnumerator DelayedFadeOut()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(showTime);
         fader.ToggleFade(false);
         fader.ToggleBlockRaycasts(false);
     }
